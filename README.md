@@ -103,6 +103,97 @@
 
 ### Imersão no Spring Framework com Spring Boot
 
+#### Apresentação Inicial
+- Abertura
+  - Explicação bem rápida sobre o curso
+  - Gleyson Sampaio
+- Visão geral do curso
+  - Imersão no Spring Framework
+  - Dez anos de experiência
+  - Spring Versus JavaEE
+  - O que é Spring Boot?
+  - Conceito de IoC / DI
+  - Beans \ Autowired \ Scopes
+  - Spring Data JPA
+- Spring Framework
+  - Fundamentos
+  - Certificado Java SE 6 Programmer
+  - O que é Spring Framework?
+    - `Framework Open Source` desenvolvido para a plataforma Java baseado nos padrões de projetos
+      - Inversão de Controle
+      - Injeção de dependência
+    - A sua estrutura é composta por módulos
+      - Tem o objetivo de reduzir a complexidade no desenvolvimento de aplicações simples ou corporativas
+    - Módulos
+      - Data Access / Integration
+        - JDBC
+        - ORM
+        - OXM
+        - JMS
+        - Transactions
+      - Web (MVC / Remoting)
+        - Web
+        - Servlet
+        - Portlet
+        - Struts
+      - AOP
+      - Aspects
+      - Instrumentation
+      - Core Container
+        - Beans
+        - Core
+        - Context
+        - Expression Language
+      - Test
+  - Spring Versus JavaEE
+    - JavaEE tem muita burocracia
+    - Spring foi um movimento para simplificar o desenvolvimento
+  - Conceito de IoC / DI
+    - Inversão de Controle ou IoC (Inversion of Control)
+      - Trata-se do redirecionamento do fluxo de execução de um código retirando parcialmente o controle sobre ele e delegando-o para um container
+      - O principal propósito é minimizar o acoplamento do código
+      - Sem o IoC era necessário criar o objeto e depois utilizá-lo
+      - Com o IoC o container cria os objetos necessários
+    - Injeção de dependências
+      - É um padrão de desenvolvimento com a finalidade de manter baixo o nível de acoplamento entre módulos de um sistema
+      - O container tem os objetos reais, mas as implementações são feitas via ‘interface’ por injeção de dependência
+  - Beans \ Autowired \ Scopes
+    - Beans
+      - Objeto instanciado (criado), montado e gerenciado por um container através do princípio da inversão de controle
+    - Scopes
+      - Singleton
+        - O container do Spring IoC define apenas uma instância do objeto
+      - Prototype
+        - Será criado um objeto a cada solicitação ao container
+      - Spring Beans Scopes
+      - HTTP
+        - Request
+          - Um bean será criado para cada requisição HTTP
+          - Os objetos existirão enquanto a requisição estiver em execução
+        - Session
+          - Um bean será criado para a sessão de utilizador
+          - Precisamos acessar a mesma solicitação duas vezes para testar os escopos específicos da ‘web’
+        - Global
+          - `Application scope` cria um bean para o ciclo de vida do contexto da aplicação
+          - Objetos compartilhados por toda a aplicação
+    - Autowired
+      - Uma anotação (indicação) onde deverá ocorrer uma injeção automática de dependência
+      - `byName`: buscado um método set que corresponde ao nome do Bean
+      - `byType`: considerado o tipo da classe para inclusão do Bean
+      - `byConstructor`: usamos o construtor para incluir a dependência
+
+#### Projeto Spring Boot
+- Conhecendo o Spring Boot
+- Primeiros passos
+- Beans versus Components
+- Scopes - Singleton ou Prototype
+- Properties value
+- Configuration properties
+- Conceito de ORM e JPA
+- Spring Data JPA
+- Conexão com Postgres
+- JPA repository
+
 ### Criando uma API REST com Spring Security
 
 ### Explorando Padrões de Projetos, na Prática com Java
