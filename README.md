@@ -75,7 +75,7 @@
     - DB
   - Arquivo de configuração
     - Ao trabalhar com Spring Boot, nos deparamos com várias configurações que devem ser realizadas
-    - O Spring Boot permite utilizar 2 diferentes tipos de arquivos de configurações:
+    - O Spring Boot permite utilizar 2 diferentes arquivos de configurações:
       - application.properties
       - application.yml
 
@@ -83,6 +83,20 @@
 - Já foi concluído no curso de desenvolvimento de jogos
 
 ### Desafios de Projetos: Crie um `Portfólio` Vencedor
+- Apresentação
+  - É visto por todos da DIO
+- PBL, `Portfólio`, Competências e Empregabilidade
+  - Aprendizado Baseado em Projetos
+  - Bom para demonstrar conhecimentos técnicos
+  - É bom para ganhar conhecimento, mas não ajuda a conseguir uma vaga no mercado de trabalho
+  - Tenha empatia com pessoas que estudam programação
+- A importância dos desafios de projeto, na prática
+  - Mostrou o módulo contribuindo num projeto `open source` no github
+  - As aulas de construção são melhores que os desafios
+  - Todos os projetos são entregues no github
+  - README é o arquivo onde fica tudo sobre o projeto
+  - Para contribuir para um desafio deve fazer um `fork`
+  - É possível ver os projetos no perfil da DIO
 
 ### Contribuindo num Projeto Open Source no Github
 - Já foi concluído no curso de desenvolvimento de jogos
