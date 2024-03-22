@@ -184,7 +184,57 @@
 
 #### Projeto Spring Boot
 - Conhecendo o Spring Boot
+  - O que é Spring Boot?
+    - Enquanto o Spring Framework é baseado no padrão de injeção de dependências
+    - O Spring Boot foca na configuração automática
+    - Antes do Spring Boot
+      - Dependência individual
+      - Verbosidade
+      - Incompatibilidade de versões
+      - Complexidade de gestão
+      - Configurações complexas e repetitivas
+  - Configurações manuais
+    - Antes do Spring todas as configurações eram feitas manualmente
+    - O Spring Boot veio para não precisar mais fazer esse processo manualmente
+  - Starters
+    - São descritores de dependências
+    - São pacotes de dependências com todas as dependências necessárias para realizar uma ação
+    - Coesão
+    - Versões compatíveis
+    - Otimização de tempo
+    - Configurações simples
+    - Foco no negócio
+  - Principais starters
+    - data-jpa: Integração com o banco de dados via JPA — Hibernate
+    - data-mongodb: Integração com banco de dados MongoDB
+    - `web`: Inclusão do container Tomcat para aplicações REST
+    - web-services: WebServices baseados na arquitetura SOAP
+    - batch: Implementação de `JOBs` de processos
+    - `test`: Disponibilização de recursos para testes unitários como JUnit
+    - openfeign: Client HTTP baseado em interfaces
+    - actuator: Gestão de monitoramento da aplicação
+  - Configuração de fábrica
 - Primeiros passos
+  - Criando um projeto com o Initializr
+    - https://start.spring.io/
+  - Importando o projeto maven no Intellij
+    - Descompactar o projeto gerado no Initializr
+    - Abrir no Intellij
+  - Conhecendo a estrutura spring boot
+    - src/main
+      - pasta raiz dos projetos java
+      - java
+        - Dentro desse pacote que fica o código java
+        - Existe a classe principal que inicia o spring boot
+    - pom.xml
+      - A propria aplicação tem um conceito de spring boot
+    - test
+      - Já tem uma classe de teste da aplicação
+    - application.properties
+      - Todas as configurações da aplicação serão feitas nesse arquivo
+  - Bean e CommandLineRunner
+    - Para dizer que uma classe é um Bean que será gerenciado pelo Spring deve utilizar a anotação @Component
+    - O CommandLineRunner é utilizado, pois, não utilizamos o pacote, `web` do spring boot
 - Beans versus Components
 - Scopes - Singleton ou Prototype
 - Properties value
