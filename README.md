@@ -251,8 +251,32 @@
   - Configurando objetos Prototype
     - Pode ter vários de acordo com necessidade da aplicação
 - Properties value
+  - O poderoso application.properties
+    - Pode ser colocado o valor dentro do application.properties
+  - @Value
+    - Com o @Value pegar o valor que foi definido no application.properties
+  - Default Value
 - Configuration properties
+  - O poderoso application.properties
+  - @ConfigurationProperties(prefix)
+    - Deixa centralizado numa classe as propriedades
 - Conceito de ORM e JPA
+  - O que é ORM
+    - Object Relational Mapping, em português, mapeamento objeto relacional
+    - É um recurso para aproximar o paradigma da orientação a objetos ao contexto de banco de dados relacional
+    - O uso de ORM é realizado através do mapeamento de objeto para uma tabela por uma biblioteca ou framework
+  - Java Persistence API
+    - É uma especificação baseada em ‘interfaces’
+    - Através de um framework realiza operações de persistência de objetos em Java
+    - Hibernate, EclipseLink, TopLink, OpenJPA
+  - Mapeamentos
+    - Identificação
+    - Definição
+    - Relacionamento
+    - Herança
+    - Persistência
+  - EntityManager
+    - É uma estrutura de camadas para acessar os dados no banco de dados
 - Spring Data JPA
 - Conexão com Postgres
 - JPA repository
