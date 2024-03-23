@@ -307,6 +307,25 @@
   - Conhecemos a central de propriedades
   - Interagimos com o banco de dados
 
+### Criando uma API REST Documentada com Spring Web e Swagger
+
+#### Apresentação Inicial
+- Apresentação e visão geral do curso
+  - Criar uma API REST documentada com Spring Web e Swagger
+  - Criar um projeto Web
+  - Configurando Controllers
+  - Documentar a API com Swagger
+  - Tratamento de exceções com Handlers
+
+#### Projeto Spring Boot
+- Criando uma REST API
+- RestController
+- Documentando a nossa API com SWAGGER
+- Habilitando o tratamento de exceções de negócio com handlers
+
+#### Conclusão
+- Conclusão e para saber mais
+
 ### Criando uma API REST com Spring Security
 
 ### Explorando Padrões de Projetos, na Prática com Java
