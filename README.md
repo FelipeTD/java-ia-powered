@@ -366,6 +366,22 @@
 
 ### Criando uma API REST com Spring Security
 
+#### Apresentação Inicial
+- Apresentação e visão geral do curso
+
+#### Spring Boot Security com JWT
+- Habilitando segurança com Spring
+- Autenticação simples
+- Configure Adapter
+- Autenticação com Banco de dados
+- JWT - JSON Web Token - Parte 1
+- JWT - JSON Web Token - Parte 2
+- JWT - JSON Web Token - Parte 3
+- JWT - JSON Web Token - Parte 4
+
+#### Conclusão
+- Conclusão e para saber mais
+
 ### Explorando Padrões de Projetos, na Prática com Java
 
 ### Desafios de código Java intermediários: Design Patterns
