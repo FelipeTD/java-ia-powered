@@ -278,8 +278,26 @@
   - EntityManager
     - É uma estrutura de camadas para acessar os dados no banco de dados
 - Spring Data JPA
+  - CrudRepository
+  - JPARepository
+  - PagingAndSortingRepository
+  - @Query
+  - @Param
+  - Com o Spring Data JPA não é mais necessário configurar o repository
+  - Ele já oferece o repository pronto criando uma interface que que extende o repository
 - Conexão com Postgres
+  - Todas as configurações para conectar com o Postgres
+  - Tomar cuidado com o nome da classe como User, pois é uma tabela reservada do banco de dados
 - JPA repository
+  - O DAO era utilizado antes do repository
+  - O repository já traz todas as operações de um CRUD
+  - Para consultas customizadas pode-se utilizar Query Method ou Query Override
+  - Query Method
+    - Utiliza JPQL
+    - O nome do método é utilizado como se fosse uma query do banco de dados
+  - Query Override
+    - Utilizado para consultas nativas
+    - Bom quando o nome da Query Method fica muito grande
 
 ### Criando uma API REST com Spring Security
 
