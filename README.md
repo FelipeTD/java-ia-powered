@@ -319,8 +319,33 @@
 
 #### Projeto Spring Boot
 - Criando uma REST API
+  - REST é um guia de boas práticas
+  - RESTFul é a capacidade de determinado sistema aplicar os princípios de REST
+    - Cliente/Servidor
+    - Interface uniforme
+    - Stateless
+    - Cache
+    - Camadas
+  - Nível de maturidade
+    - Definido em 4 níveis
+    - Level 0 The swamp of POX -> Ausência de regras
+    - Level 1 Resources -> Define os nomes dos recursos e define os verbos
+    - Level 2 Http Verbs -> Valida a aplicabilidade dos verbos
+    - Level 3 Hypermedia Controls -> HATEOAS
+    - Glory of REST
 - RestController
+  - Uma classe contendo anotações específicas para a disponibilização de recurso HTTP baseados nos nossos serviços e regras de negócio
 - Documentando a nossa API com SWAGGER
+  - É um centralizador de API
+  - Atualmente basta adicionar uma dependência 
+  ```
+  <dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.3.0</version>
+  </dependency>
+  ```
+  - E acessar a URL http://localhost:8080/swagger-ui/index.html#/
 - Habilitando o tratamento de exceções de negócio com handlers
 
 #### Conclusão
