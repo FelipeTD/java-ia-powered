@@ -299,6 +299,14 @@
     - Utilizado para consultas nativas
     - Bom quando o nome da Query Method fica muito grande
 
+#### Conclusão
+- Conclusão e para saber mais
+  - Dominamos o Spring Boot Framework
+  - Criamos um projeto
+  - Exploramos o IoC / DI
+  - Conhecemos a central de propriedades
+  - Interagimos com o banco de dados
+
 ### Criando uma API REST com Spring Security
 
 ### Explorando Padrões de Projetos, na Prática com Java
