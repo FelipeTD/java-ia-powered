@@ -347,9 +347,22 @@
   ```
   - E acessar a URL http://localhost:8080/swagger-ui/index.html#/
 - Habilitando o tratamento de exceções de negócio com handlers
+  - Conseguir ajudar o usuário a entender o problema
+  - Pode Utilizar o ControllerAdvice
+  - Pode utilizar o ExceptionHandler em cada método
+  - Pode utilizar o ResponseStatusExceptionResolver
+  - Pode utilizar o RestControllerAdvice
+    - Centraliza num único componente todas as exceções
+    - Existem formas melhores de fazer o controle de exceção
+    - A centralização das exceções de campo requerido foi boa
 
 #### Conclusão
 - Conclusão e para saber mais
+  - Criamos um projeto WEB
+  - Estruturamos nossos controllers
+  - Documentamos a nossa API
+  - Habilitamos tratamento de exceções
+  - Interagimos com a API via Postman
 
 ### Criando uma API REST com Spring Security
 
