@@ -236,7 +236,20 @@
     - Para dizer que uma classe é um Bean que será gerenciado pelo Spring deve utilizar a anotação @Component
     - O CommandLineRunner é utilizado, pois, não utilizamos o pacote, `web` do spring boot
 - Beans versus Components
+  - Quando usar @Bean
+    - Utilizado quando não tem acesso ao código-fonte
+    - Exemplo é o CommandLineRunner
+  - Quando usar @Component
+    - Serão componentes scaneados pela aplicação
+    - Utiliza @Component quando tem acesso ao código-fonte
+    - Evita dar o comando `new` para utilizar os métodos da classe
+  - Implementar a IoC e DI
 - Scopes - Singleton ou Prototype
+  - Conceito de Scope
+  - Configurando objeto Singleton
+    - Apenas uma instância na aplicação
+  - Configurando objetos Prototype
+    - Pode ter vários de acordo com necessidade da aplicação
 - Properties value
 - Configuration properties
 - Conceito de ORM e JPA
