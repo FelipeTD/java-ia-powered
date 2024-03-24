@@ -368,12 +368,36 @@
 
 #### Apresentação Inicial
 - Apresentação e visão geral do curso
+  - Spring Boot Security
+  - Introdução sobre segurança
+  - Habilitando segurança com spring
+  - Configure Adapter
+  - Autenticação com banco de dados
+  - JWT - Json Web Token
 
 #### Spring Boot Security com JWT
 - Habilitando segurança com Spring
+  - É apenas um grupo de filtros servlet que ajudam você a adicionar autenticação e autorização ao seu aplicativo ‘web’
+  - É configurado um utilizador e senha padrão, quando se cria um projeto com spring security
+  - Utilizar: user
+  - Senha: gerada a cada execução do projeto
 - Autenticação simples
+  - É feita no application.properties
+  ```
+  spring.security.user.name=user
+  spring.security.user.password=user123
+  spring.security.user.roles=USERS
+  ```
+  - Tem como gerar mais de um utilizador em memória
+  - O curso está com código desatualizado
 - Configure Adapter
+  - Centraliza as configurações de acesso a recursos
+  - O curso está com código desatualizado
+  - A versão mais recente do spring security é de fevereiro de 2024 nesse momento
 - Autenticação com Banco de dados
+  - Foi utilizado o banco `H2`
+  - O curso está com código desatualizado
+  - A parte mais difícil foi criar um componente separado para a geração do encode da senha
 - JWT - JSON Web Token - Parte 1
 - JWT - JSON Web Token - Parte 2
 - JWT - JSON Web Token - Parte 3
