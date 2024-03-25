@@ -399,12 +399,35 @@
   - O curso está com código desatualizado
   - A parte mais difícil foi criar um componente separado para a geração do encode da senha
 - JWT - JSON Web Token - Parte 1
+  - É um JSON com as informações do utilizador da aplicação
+  - Constituído por um `Header`, `Payload` e `Signature`
 - JWT - JSON Web Token - Parte 2
+  - Adicionando dependência do JWT
+  - Pacotes da aplicação
+    - model
+    - dto
+    - repository
+    - service
+    - controller
+    - security
+  - Classes da aplicação
+    - SwaggerConfig — Não precisa mais porque a dependência já configura para nós
+    - JWTObject
+    - JWTCreator
 - JWT - JSON Web Token - Parte 3
+  - Configuração antiga de 2022
+  - Precisa utilizar o Java 8 e algumas dependências do maven para funcionar
 - JWT - JSON Web Token - Parte 4
+  - Testes com o JWT
+  - Banco de dados não funcionou para acessar o `H2`
 
 #### Conclusão
 - Conclusão e para saber mais
+  - Habilitamos a segurança na nossa API
+  - Conhecemos algumas formas de configurar segurança
+  - Configuramos manualmente a segurança da nossa API
+  - Consultamos os nossos utilizadores em banco de dados
+  - Melhoramos a segurança da nossa API com JWT
 
 ### Explorando Padrões de Projetos, na Prática com Java
 
