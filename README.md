@@ -471,6 +471,8 @@
   - Entreguei o meu repositório com o estudo sobre todos os `design pattern` do GoF
 
 ### Desafios de código Java intermediários: Design Patterns
+- Algumas questões sobre `Design Patterns`
+- Todas as questões foram respondidas na plataforma
 
 ### Aula Inaugural - Java AI Powered
 
