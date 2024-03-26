@@ -475,6 +475,12 @@
 - Todas as questões foram respondidas na plataforma
 
 ### Aula Inaugural - Java AI Powered
+- Autodescrição é uma coisa ótima nos vídeos
+- Curso voltado para quem quer trabalhar fora do Brasil
+- Curso voltado para utilizar IA na programação
+- Vídeo de 1 hora e meia
+- O recomendado são 10 horas por semana
+- As empresas buscam por especialistas
 
 ## Explorando Testes e Arquiteturas Java de Alta Escalabilidade
 
