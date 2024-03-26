@@ -430,6 +430,45 @@
   - Melhoramos a segurança da nossa API com JWT
 
 ### Explorando Padrões de Projetos, na Prática com Java
+- Como usar os desafios de projeto para criar o seu `portfolio`
+  - Explicação de como entregar os desafios
+- Apresentação Inicial
+  - Os padrões de projeto serão feitos com Java Puro
+  - Alguém está sentado na sombra hoje porque alguém plantou uma árvore há muito tempo `Warren Buffet`
+- Padrões de projeto
+  - Passo 1 — Padrões de Projeto
+  - Passo 2 — Praticando com Java Puro
+  - Passo 3 — Praticando com Spring
+  - Passo 4 — Desafio de Projeto
+  - A principal referência foi feita em 1995 no livro `Design Patterns: Elements of Reusable Object-Oriented Software`
+  - Divido em:
+    - Criacionais
+    - Comportamentais
+    - Estruturais
+  - Falar é fácil. Mostre-me o código `Linus Torvalds`
+- Praticando com Java Puro: Singleton
+  - Permitir a criação de uma única instância de uma classe e fornecer um modo para recuperá-la
+- Praticando com Java Puro: Strategy
+  - Simplificar a variação de algoritmos para a resolução de um mesmo problema
+- Praticando com Java Puro: Facade
+  - Prover uma ‘interface’ que reduza a complexidade nas integrações com subsistemas
+- Praticando com Spring: Introdução
+  - Relacionar padrões de projeto com o Spring
+  - Singleton: @Bean e @Autowired
+  - Strategy: @Service e @Repository
+  - Facade: Spring Data JPA e ViaCEP
+- Praticando com Spring: Conhecendo o Projeto Base
+  - CrudRepository é uma Strategy
+- Praticando com Spring: Padrões de Projeto numa API REST
+  - Desenvolvendo o repository do cliente
+  - Testando a API
+  - Funcionou tudo corretamente
+- Desafio de Projeto
+  - Pelo que entendi é para criar um projeto com algum `design patterns`
+  - Vou usar o meu projeto com todos os `design patterns`
+- Entendendo o desafio
+  - Entregar um projeto com algum `design pattern` implementado
+  - Entreguei o meu repositório com o estudo sobre todos os `design pattern` do GoF
 
 ### Desafios de código Java intermediários: Design Patterns
 
