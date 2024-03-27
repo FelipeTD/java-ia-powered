@@ -485,8 +485,158 @@
 ## Explorando Testes e Arquiteturas Java de Alta Escalabilidade
 
 ### Introdução a Testes de ‘software’
+- Introdução
+  - Introdução
+    - Apresentação do instrutor do curso
+    - Atua desde 2012
+    - Entender o que é testes de software e seus principais conceitos
+    - Compreender como essa disciplina permeia o desenvolvimento de ‘software’
+    - Entender os diversos testes e as suas finalidades
+    - Falar um pouco sobre qualidade de ‘software’
+    - Definição e conceitos básicos
+    - Níveis e técnicas de teste
+    - Testes não funcionais
+    - A pirâmide de testes
+- Definição e conceitos básicos
+  - Definição de Testes
+    - Evitar que o cliente final utilize outro sistema por questão de erro
+    - Como testar?
+      - Valor -> Saque -> Resultado
+    - Erros em produção são muito caros
+    - Chega a casa dos milhões
+    - Definição (Dias Neto)
+      - É o processo de execução de um produto para determinar se ele atingiu as suas especificações funcionou corretamente no ambiente para o qual foi projetado
+    - Definição (Edsger W. Dijkstra)
+      - Testes podem ser usados para mostrar a presença de erros, mas nunca para mostrar a sua ausência
+  - Evolução de Testes na engenharia de ‘software’
+    - Cascata
+      - Especificação
+      - Projeto de software
+      - Implementação
+      - Testes
+      - Implantação
+    - Desenvolvimento ágil
+      - Meet & Plan
+      - Design
+      - Code & Test
+      - Release
+      - Feedback
+  - Conceitos básicos
+    - Defeito: É o erro do sistema ou `Bug`
+    - Erro: Com o desenvolvedor
+    - Falha: Com o utilizador final
+    - Verificação: Verificar se o sistema está construido da forma correta
+    - Validação: Verificar se as regras de negócio estão corretas
+- Níveis e técnicas de teste
+  - Níveis de teste
+    - Unidade
+      - JUnit
+    - Integração
+      - Testar os componentes entre si
+      - Banco de dados
+      - API
+      - Entre outros
+    - Sistema
+      - Testar num ambiente de homologação
+      - Somente para alguns utilizadores
+    - Regressão
+      - Testar se as novas features não irão quebrar as features existentes
+      - Utiliza o Selenium
+    - Alpha: Com certeza vai ter algo para ajustar 
+    - Beta: Já está próximo do que é esperado 
+    - Cannary 
+      - Deploy canário
+      - Somente algumas pessoas têm acesso às novas versões
+    - Aceitação
+      - Já foi para produção
+      - Antigamente era mais formal
+      - BDD automatizou esse processo
+  - Técnicas de teste
+    - Cada nível de teste possui técnicas diferentes
+    - Caixa Branca
+      - Também conhecida como teste estrutural
+      - Validar dados, controles, fluxos, chamadas
+      - Garantir a qualidade da implementação
+      - Níveis: Unidade, Integração e Regressão
+    - Caixa Preta
+      - Teste funcional
+      - Verificar saídas usando várias entradas
+      - Teste sem conhecer a estrutura interna do ‘software’
+      - Níveis: Integração, Sistema e Aceitação
+    - Caixa Cinza
+      - Mescla técnicas de caixa branca e caixa preta
+      - Analisa parte lógica e também funcionalidade
+      - Exemplo: ter acesso à documentação do funcionamento do código
+      - Engenharia reversa
+- Testes não funcionais
+  - O que são testes não funcionais
+    - Testes não funcionais estão ligados a requisitos não funcionais
+      - Comportamento do sistema
+      - Performance
+      - Escalabilidade
+      - Segurança
+      - Infraestrutura
+    - Testes não funcionais visa testar partes do ‘software’ que não são associados as regras de negócio, mas sim a requisitos não funcionais
+    - São utilizadas ferramentas que usam técnicas para apurar o comportamento do sistema em determinadas circunstâncias
+    - Teste de carga
+      - Realizado para verificar qual o volume de transações, acessos simultâneos ou utilizadores que um servidor/‘software’/sistema suporta
+      - Pontos de atenção
+        - Objetivos para clareza de resultados
+        - Ambiente
+        - Cenários
+        - Execução de testes
+        - Análise de resultado
+      - Gattling Load Testing
+      - Apache JMeter
+    - Teste de estresse
+      - Realizado para submeter o ‘software’ a situações extremas
+      - O teste de estresse baseia-se em testar os limites do ‘software’ e avaliar o seu comportamento
+      - Avalia-se até quando o ‘software’ pode ser exigido e quais as falhas decorrentes do teste
+      - Apache JMeter
+    - Teste de segurança
+      - É um processo crítico de segurança cibernética que visa encontrar vulnerabilidades em sistemas, ‘software’, redes e aplicativo
+- A pirâmide de testes
+  - A pirâmide de testes
+    - Testes unitários (rápido e isolado)
+    - Testes de serviços (mediano e isolado medianamente)
+    - Testes de `UI` (demorado e integrado)
+    - Software Testing Ice Cream Cone Anti-Pattern
+      - Testes manuais
+      - Testes automatizados
+      - Testes de integração
+      - Testes unitários
+    - Tente fugir desse pattern
+- Encerramento
+  - Encerramento
+    - É um curso somente de introdução para ter uma base sobre testes de ‘software’
+    - Conceitos básicos e a evolução da disciplina de testes
+    - Terminologia
+    - Níveis e técnicas de teste
+    - Testes não funcionais
+    - Pirâmide de testes
 
 ### Testes Unitários com JUnit
+- Apresentação do curso
+  - Apresentação do curso
+- Por que escrever testes unitários
+  - Por que escrever testes unitários
+- Hello World, JUnit
+  - Hello World, Junit
+- Aprofundando nos recursos
+  - O básico para testar
+  - Mais algumas asserções
+  - After e Before
+  - Assumptions e testes condicionais
+  - Testando exceptions
+  - Ordenando testes
+- Recursos de testes nas IDEs
+  - Visual Studio Code
+  - Eclipse
+  - Intellij IDEA
+- Boas práticas
+  - Boas práticas
+- Conclusão do curso
+  - Conclusão do curso
 
 ### Desenvolvendo testes utilizando Mockito
 
