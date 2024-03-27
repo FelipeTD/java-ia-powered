@@ -618,27 +618,115 @@
 ### Testes Unitários com JUnit
 - Apresentação do curso
   - Apresentação do curso
+    - Entender a motivação de escrever testes unitários
+    - Conhecer o que é o JUnit
+    - Configurar a ferramenta para utilizar nos seus projetos java
+    - Aprofundar nos recursos que ele provê para construir testes unitários efetivos
+    - Por que escrever testes unitários?
+    - Hello World, Junit!
+    - Aprofundando nos recursos
+    - Recursos das IDEs
+    - Boas práticas
+    - Conclusão
 - Por que escrever testes unitários
   - Por que escrever testes unitários
+    - Entender o que é teste unitário e a sua importância
+    - O que são testes unitários?
+      - Também chamado teste de unidade
+      - Testar a menor unidade de código possível
+      - Unidade: função, método, classe
+      - Testar uma aplicação na sua menor parte
+      - Geralmente escrito em tempo de desenvolvimento
+    - Exemplo simples demonstrado
+    - Por que escrever testes unitários?
+      - Compreender o código fonte
+      - Corrigir erros com segurança
+      - Refatorar código sem introduzir erros
+      - Entregar com segurança uma nova versão
+      - Pirâmide de testes
+      - Testes unitários como métrica de qualidade (confiabilidade)
+      - Cobertura de testes
+      - Automação na execução de testes
+      - Cultura de agilidade
 - Hello World, JUnit
   - Hello World, Junit
+    - Falar um pouco sobre a história do JUnit
+      - Ferramenta de código aberto para criação de testes unitários 
+      - Criado por Erich Gamma e Kent Beck
+      - Kent Beck é o criador do TDD
+      - Erich Gamma faz parte da `Gang of Four` que criou o conceito de Padrões de Projeto
+    - Falar um pouco sobre a versão atual
+      - Versão atual 5
+      - Junit Platform
+        - É o componente que executa os testes
+      - JUnit Jupiter
+        - Todas as classes e interfaces ficam dentro dele
+      - JUnit Vintage
+        - Faz integração com as versões anteriores
+    - Configurar em projeto Maven e Gradle a ferramenta
+      - Basta adicionar a dependência
 - Aprofundando nos recursos
   - O básico para testar
+    - Conhecer em detalhes os pricipais recursos que o JUnit provê
   - Mais algumas asserções
+    - Algumas dicas para testes
   - After e Before
+    - All: executado depois que todos os testes forem finalizados
+    - Each: executado em cada teste
   - Assumptions e testes condicionais
+    - Assumptions: Os testes são executados somente se a Assumption estiver correta
   - Testando exceptions
+    - assertThrows e assertDoesNotThrows
   - Ordenando testes
+    - OrderAnnotation
+    - MethodName
+    - Random
+    - DisplayName
 - Recursos de testes nas IDEs
+  - Conhecer o básico para executar testes unitários nas IDEs mais utilizadas pelo mercado
   - Visual Studio Code
+    - É possível executar testes no VS Code
+    - Precisa instalar uma extensão
   - Eclipse
+    - O eclipse é mais bonito as execuções de teste
+    - Podemos dizer que traz mais detalhes dos testes
+    - Tem como definir o valor de algumas variaveis
   - Intellij IDEA
+    - A interface do Intellij é mais limpa
+    - Também aceita realizar debug no código
 - Boas práticas
   - Boas práticas
+    - Conhecer boas práticas adotadas ao escrever testes unitários
+    - Preocupe-se com os nomes
+    - Preocupe-se com a facilidade de leitura
+    - Procure escrever o código de teste o mais próximo possível do código de execução
+    - Veja um pouco sobre TDD
+      - Escreva um teste que falhe
+      - Faça o código funcionar
+      - Elimine redundância
+    - Busque uma padronização de nomenclatura
+    - Testes precisam ser determinísticos
+      - Um teste não pode influenciar no outro
+    - Economize tempo automatizando
+      - Ferramentas de cobertura de código (JaCoCo)
+      - Automatize a execução dos seus testes
 - Conclusão do curso
   - Conclusão do curso
+    - Motivação
+    - Configuração
+    - Principais recursos
+    - Usando os recursos das IDEs
+    - Boas práticas
 
 ### Desenvolvendo testes utilizando Mockito
+- Apresentação do curso
+- Introdução ao Mockito
+- Mockando objetos
+- Espiando objetos
+- Capturando argumentos
+- Manipulando retornos
+- Mockando métodos estáticos
+- Conclusão
 
 ### Introdução aos conceitos de API e Clean Architecture
 
