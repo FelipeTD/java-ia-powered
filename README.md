@@ -720,13 +720,38 @@
 
 ### Desenvolvendo testes utilizando Mockito
 - Apresentação do curso
+  - Conhecer o Mockito e seus principais recursos para auxiliar na escrita de testes unitários
 - Introdução ao Mockito
+  - Entender conceito de mock
+  - Configurar um projeto utilizando mockito
+  - Conhecer um pouco mais sobre mockito
+  - Funciona com Spring, Kotlin, Java
+  - Um pouco sobre as facilidades que o Mockito fornece
+  - Como configurar o Mockito no seu projeto
 - Mockando objetos
+  - Entender como mockar objetos no Mockito
 - Espiando objetos
+  - Entender como usar a função Spy do Mockito
+  - Entender a diferença entre Mock e Spy
 - Capturando argumentos
+  - Entender como funciona a fução Captor do Mockito
 - Manipulando retornos
+  - Entender como usar os Matchers que estão disponíveis no Mockito
+  - Entender como manipular retornos no Mockito
+  - São os any do Mockito: any(), anyString(), anyInt(), anyBoolean()
 - Mockando métodos estáticos
+  - Entender como fazer mock de métodos estáticos
+  - Precisa usar a dependência mockito-inline
 - Conclusão
+  - Introdução
+  - Mock
+  - Stubbing (when, thenReturn, thenThrow)
+  - Verify
+  - Captor
+  - mockito-inline
+  - Se aprofundar
+    - BDDMockito
+    - Integração Spring
 
 ### Introdução aos conceitos de API e Clean Architecture
 
