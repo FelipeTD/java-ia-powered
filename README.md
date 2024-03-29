@@ -755,6 +755,90 @@
 
 ### Introdução aos conceitos de API e Clean Architecture
 
+#### Conceitos iniciais sobre Arquitetura Rest
+- Introdução ao curso e objetivos
+  - Implementação de API Avengers com Springboot e Kotlin
+  - Deploy vai ser feito no heroku
+  - Banco de dados postgres
+  - Agenda de conceitos
+    - Estilo Arquitetural REST
+    - Conceito de API First
+    - API RESTFul com Spring Boot
+    - Clean Architecture
+      - Ports and Adapters
+    - Sistema de gestão de banco de dados
+      - NoSQL
+      - Relacional
+    - Postman
+- Conceito inicial sobre REST
+  - É um acrônimo de representação de tranferência de estado (REpresentational State Transfer)
+  - É um estilo arquitetural apresentado por Roy Fielding (HTTP e REST)
+  - Interoperável e agnóstico a linguagem ou tecnologia (meio de integração entre sistemas de qualquer stack tecnológica)
+- O que são Constraints
+  - Interface uniforme
+    - Baseado em recursos, ‘interfaces’ por onde o cliente se comunica com o servidor
+  - Cliente-Servidor
+    - Cliente e servidor podem existir e serem desenvolvidos separadamente, são independentes
+  - Sem estado
+    - O servidor não guarda estado, sessão, necessário sempre, a cada requisição, caso necessário informar o servidor de quem está requrendo o dado especifíco
+  - Cache
+    - Funcionalidade que elimina, dados algumas configurações, voltar ao servidor, se a requisição se repetir dentro de um tempo
+    - `Cache` pode ser gerenciado em modo cliente ou do lado servidor
+  - Sistema em camadas
+    - Por ser sem estado, permite distribuir as implantações ou recursos
+      - Exemplo: API num servidor, data storage em outro e sistema de autenticação num terceiro servidor
+  - Código sobre demanda (opcional)
+    - Possibilidade de retornar "executáveis" via API para renderização de algum componente se necessário
+- Sobre resource naming guide e catching
+  - Resource Naming Guide
+    - Estratégia para expor recursos (plural ou singular)
+    - Estrutura de nomes para recuperar recursos, armazenar, detalhe, nomes compostos, passar parametros (query param, path param)
+    - URI (endereçamento para um determinado recurso)
+  - Caching
+    - Capacidade de manter cópias de um response armazenadas por um tempo determinado
+    - Elementos
+      - Tempo de expiração
+      - Cache-Control
+      - E-tag
+      - Last Modified
+    - Cuidados
+- Versionamento
+  - Permite evolução de uma API sem trazer quebra de contratos para os clientes (mudanças em requests e response, remoção de API)
+  - Tipos
+    - URI: http://api.example.com/v1, http://apiv1.example.com
+    - Header Customizado: Accept-version: v1
+    - Content Negotiation (Accept Header):
+      - Accept: application/vnd.example.v1+json
+      - Accept: application/vnd.example+json;version=1.0
+- Verbos HTTP
+  - GET
+  - POST
+  - PUT
+  - PATCH
+  - DELETE
+- Códigos HTTP
+  - Códigos HTTP
+    - 1XX — Informações
+    - 2XX — Sucesso na requisição
+    - 3XX — Redirecionamento
+    - 4XX — Erro no lado do cliente
+    - 5XX — Erro no lado do servidor
+- Idempotência
+  - Uma requisição idempotente é aquela que, independente da quantidade de vezes que se execute, o efeito é o mesmo que da primeira execução
+  - POST — Altera estado no servidor, cria recurso, logo, não é idempotente
+  - GET, PUT, DELETE, HEAD, OPTIONS e TRACE são idempotentes
+- N+1 em REST APIs
+  - Quando são feitas muitas requisições para buscar os dados necessários
+  - Montar uma única resposta com todos os dados para um único request
+
+#### Conceitos sobre Arquitetura Hexagonal
+- Conceitos iniciais sobre API FIRST
+- Agenda - API: Pré-requisito e Arquitetura Hexagonal aplicado ao projeto
+- Agenda - API: Domain Layer, Resource Layer e Testes
+- Agenda - Clean Architecture
+- Conceitos sobre sistema de gestão de banco de dados
+- Comentários adicionais e conclusão do curso
+
 ### Introdução a Arquitetura Hexagonal com Spring Boot e Kotlin
 
 ### Desmistificando microserviços, BFF e `DDD`
