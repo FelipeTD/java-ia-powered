@@ -895,6 +895,27 @@
 
 ### Introdução a Arquitetura Hexagonal com Spring Boot e Kotlin
 
+#### Montando a estrutura do projeto
+- Organizando o ambiente de desenvolvimento
+- Explicando o README.md e as dependências do projeto
+- Configurações no Swagger Editor
+- Organizando o projeto conforme o modelo de Arquitetura Hexagonal
+- Criando as classes e métodos da camada de aplicação e domínio
+- CRUD: Parte 1
+- CRUD: Parte 2
+- Rodando a aplicação e adicionando outras configurações
+- Criando o arquivo de configurações e respondendo perguntas
+
+#### Implementação da camada de infraestrutura e fazendo deploy com Heroku
+- Recaptulando a aula 1 e overview da aula 2
+- Criando a camada de infraestrutura
+- Conceito "porta e adaptador"
+- Configurando o docker
+- Corrigindo a migração e fazendo testes no postman
+- Subindo a aplicação com o Heroku
+- Configurando a aplicação no Heroku e finalizando o projeto
+- Respondendo perguntas dos Devs
+
 ### Desmistificando microserviços, BFF e `DDD`
 
 ### Arquitetura Orientada a Eventos com Java, Spring Boot e Kafka
