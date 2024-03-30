@@ -833,11 +833,65 @@
 
 #### Conceitos sobre Arquitetura Hexagonal
 - Conceitos iniciais sobre API FIRST
+  - Antes de começar a desenvolver é necessário definir os contratos da aplicação
 - Agenda - API: Pré-requisito e Arquitetura Hexagonal aplicado ao projeto
+  - Application Layer
+    - Configs
+    - Controllers (conceito de fronteira)
+      - DTOs (request, response)
+      - Bean Validations
+      - Init Binders (validações customizadas)
+      - Error Handlers
 - Agenda - API: Domain Layer, Resource Layer e Testes
+  - Domain Layer
+    - Entidades
+    - Portas (interfaces)
+    - Services
+  - Resource Layer
+    - Spring data repository
+    - Proxy repository (composição com spring data repository e implementação ‘interface’ repository do domínio)
+    - Entidades mapeadas com anotações de acordo com tecnologia de banco de dados escolhida para o projeto
+  - Testes
+  - https://start.spring.io
+  - Dockerização
+    - `Script` e configuração para criação de imagem
+    - Compose yaml do serviço
+    - Usando o docker-compose para subir o serviço
+  - Heroku
+    - Criando uma aplicação
+    - Conectando com o github do projeto
+    - Automatizando o pipeline de deploy
 - Agenda - Clean Architecture
+  - Principal objetivo de uso de Clean Architecture é fornecer aos desenvolvedores uma maneira de organizar o código de forma que encapsule a lógica de negócios, mas mantenha-o separado do mecanismo de entrega
+  - Vantagens:
+    - Independência de ‘interfaces’ de usuário
+    - Independência da stack tecnológica utilizada para acesso aos dados ou expor entradas
+    - Testável
+    - Carga cognitiva de entendimento do projeto, regras de negócio
+    - Facilita manutenabilidade
 - Conceitos sobre sistema de gestão de banco de dados
+  - Será utilizado Postgres
+  - Postgres e MySQL (RDBMS SQL)
+    - OK: ACID transactions
+    - OK: SQL Support 
+    - OK: Standardized
+    - NOK: Horizontal Scaling
+    - NOK: High Availability
+  - MongoDB, Cassandra e Redis (NoSQL)
+    - OK: Horizontal Scaling
+    - OK: High Availability
+    - NOK: ACID transactions
+    - NOK: Standardized
+    - NOK: SQL Support
+  - Cloud Spanner, VOLTDB e CockroachDB (NewSQL)
+    - OK: ACID transactions
+    - OK: SQL Support
+    - OK: High Availability
+    - OK: Horizontal Scaling
+    - NOK: Standardized
 - Comentários adicionais e conclusão do curso
+  - Obrigado pela atenção
+  - Respondendo a perguntas
 
 ### Introdução a Arquitetura Hexagonal com Spring Boot e Kotlin
 
