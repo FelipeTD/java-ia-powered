@@ -897,14 +897,40 @@
 
 #### Montando a estrutura do projeto
 - Organizando o ambiente de desenvolvimento
+  - Configuração inicial do projeto com todas as dependências necessárias
 - Explicando o README.md e as dependências do projeto
+  - Irá utilizar API First
+  - Ainda não fez a aplicação funcionar
+  - Está somente configurando as coisas
 - Configurações no Swagger Editor
+  - Montando uma documentação no Swagger Editor
+  - Deu um exemplo bem pobre de um GET
 - Organizando o projeto conforme o modelo de Arquitetura Hexagonal
+  - Criando os pacotes da aplicação
+  - Criou somente o request, response e resource
 - Criando as classes e métodos da camada de aplicação e domínio
+  - Criando primeiros métodos de Controller e Entidade
 - CRUD: Parte 1
+  - Criando o repository
+  - Não é o repository do JPA é somente um conversor
+  - Criando GET e POST do CRUD
 - CRUD: Parte 2
+  - Finalizando o CRUD
+  - Ficou faltando o Delete
 - Rodando a aplicação e adicionando outras configurações
+  - Criando o delete para completar o CRUD
+  - Criando configurações do application.yaml
+  - Nossa senhora! É triste ver configurações antigas novamente
+  - E o pior de tudo é que foi logo na parte em que eu tinha mais interesse
 - Criando o arquivo de configurações e respondendo perguntas
+  - Terminando as configurações
+  - As configurações do docker mudam com muita facilidade
+  - A pior parte é que se utilizar versões antigas fica vulnerável
+  - Para rodar os arquivos do docker
+    - docker-compose -f avenger-api-resources.yaml up -d
+    - docker-compose -f avenger-api-resources.yaml down -d
+  - Muitas coisas configuradas de forma muito complicada
+  - Existem vários jeitos mais simples de realizar a configuração de infraestrutura
 
 #### Implementação da camada de infraestrutura e fazendo deploy com Heroku
 - Recaptulando a aula 1 e overview da aula 2
