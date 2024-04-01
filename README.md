@@ -934,15 +934,42 @@
 
 #### Implementação da camada de infraestrutura e fazendo deploy com Heroku
 - Recaptulando a aula 1 e overview da aula 2
+  - Resumo do que foi feito
+  - Fazer a parte de banco de dados e testar na heroku
 - Criando a camada de infraestrutura
+  - Criando a camada que irá se comunicar com o banco de dados
 - Conceito "porta e adaptador"
+  - Explicando sobre porta e adaptador
 - Configurando o docker
+  - Trabalhando na parte do docker para subir a aplicação
+  - Deu erro para subir a aplicação e ficou por isso mesmo
+  - Falou que vai corrigir e colocar no repositorio com a correção
 - Corrigindo a migração e fazendo testes no postman
+  - Mostrando a aplicação subindo com dados configurados diretamente no arquivo de configuração
 - Subindo a aplicação com o Heroku
+  - Testou o PUT e DELETE
+  - Subir para o heroku
+  - Precisa criar uma conta
 - Configurando a aplicação no Heroku e finalizando o projeto
+  - A configuração será feita agora
+  - Precisou ser ajustada várias configurações
+  - Preço R$35 por mês ou 7 dolares
+  - A parte de deploy já é automática
 - Respondendo perguntas dos Devs
+  - Respondendo às perguntas
+  - Poderia utilizar Quarkus?
+    - Seria necessário configurar o quarkus
+  - Heroku possui configuração de `pipeline`
+    - Pode ser configurado da forma que quiser
 
 ### Desmistificando microserviços, BFF e `DDD`
+- Introdução aos Microserviços
+  - Apresentação do curso
+  - Microserviços (MS)
+- Entendendo BFF e DDD
+  - Back-end For Front-end (BFF)
+  - Domain-Driven Design (DDD)
+- Aplicabilidade
 
 ### Arquitetura Orientada a Eventos com Java, Spring Boot e Kafka
 
