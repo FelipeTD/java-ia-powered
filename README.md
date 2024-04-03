@@ -965,13 +965,89 @@
 ### Desmistificando microserviços, BFF e `DDD`
 - Introdução aos Microserviços
   - Apresentação do curso
+    - Explicação inicial sobre `DDD e BFF`
+    - Devemos conseguir identificar os pontos de aplicabilidade do `DDD` numa solução de microsserviço ou backend for frontend
+    - Saberemos qual a importância de uma boa modelagem das camadas ao propor uma solução
+    - Entendimento sobre MS e BFF
+    - Domain-Drive Design
+    - Saber como e onde aplicar
   - Microserviços (MS)
+    - Monolítico
+      - HTML, JavaScript, MVC
+      - Serviço
+      - Acesso a dados
+    - Microserviços
+      - Quebra em pequenas estruturas
+      - Possui um frontend e vários serviços de backend
+      - Microserviços podem ser do frontend também
+      - Pergunta sobre segurança nos microserviços
 - Entendendo BFF e DDD
   - Back-end For Front-end (BFF)
+    - É uma API REST ou qualquer outra API
+    - Tem um contrato conforme o aplicativo que está se comunicando
+    - Ganha em desempenho, tamanho do retorno, entre outras vantagens
+    - BFF também formata os dados para exibição nos componentes do frontend
+    - É uma forma de centralizar as chamadas de vários microserviços
   - Domain-Driven Design (DDD)
+    - Definindo domínio rico em aplicações de microserviços e BFF
+    - TDD: Teste falha e depois tem que implementar para funcionar
+    - BDD: Mistura do teste com regra de negócio
+      - O grande problema do BDD é a falta de inglês nos brasileiros
+    - DDD:
+      - Introdução feita em 2003 por `Eric Evans`
+      - É uma filosofia combinada num `Design Pattern`
+      - Fácil de compreender
+      - Difícil de aplicar
+      - Um guia para criar uma modelagem com base no negócio
+      - Domine a teoria e não a prática
+      - O modelo e o coração do `design` dão forma um ao outro
+      - O modelo é a espinha dorsal de uma linguagem utilizada por todos os membros de um grupo
+      - O modelo é um conhecimento destilado
 - Aplicabilidade
+  - DDD: Lite
+  - Tenha o context map definido e coeso
+  - DDD não é quebrar a arquitetura em camadas
+  - Leia sobre `Design Patterns`
+  - Estrutura
+    - Aggregates
+      - Repositories
+      - Factories
+        - Value Objects
+        - Entities
+    - Services
+    - Model-Driven Design
+    - Smart UI
+    - Layered Architecture
+  - `Score Card DDD`
+    - Se o seu projeto contém isso
+    - Pontos
+    - Considerações de apoio
+  - Erros comuns
+    - Permitir que o meio de persistência influencie diretamente nas entidades
+    - Não se envolver com os donos do negócio
+    - Ignorar a linguagem comum
+    - Não ter conhecimento dos limites de contexto
+    - Entidades anêmicas
+    - Deixar toda a lógica por conta do domínio
+    - Deixar de focar no negócio e olhar para tecnologias
 
 ### Arquitetura Orientada a Eventos com Java, Spring Boot e Kafka
+
+#### Aprenda como relacionar Java, Spring Boot e Kafka
+- Conceitos iniciais
+- Diagramando o projeto: Parte 1
+- Diagramando o projeto: Parte 2
+- Dúvidas e comentários
+- Por dentro da interface da plataforma docker e requisitos básicos
+- Preparação da IDE Offset Explorer
+
+#### Colocando a mão na massa
+- Preparando o projeto com Spring Boot
+- Desenvolvimento inicial do projeto no Intellij
+- Testes iniciais da aplicação
+- Desenvolvimento do serviço de consumidor
+- Finalizando a conexão e alteração de dados
+- Estrutura do projeto no github e comentários finais
 
 ### Desenvolvendo um sistema para eleição usando Quarkus Framework
 
