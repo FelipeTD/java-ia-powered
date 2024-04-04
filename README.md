@@ -1074,6 +1074,22 @@
   - Comentários finais e projeto no github
 
 ### Desenvolvendo um sistema para eleição usando Quarkus Framework
+- Apresentação do `Expert`
+- Orientações gerais e expectativas da aula
+- Preparação do ambiente e configuração
+- Setup das aplicações quarkus e discussão arquitetural
+- Desenvolvimento — Gerenciamento de candidatos — Serviços — Parte 1
+- Desenvolvimento — Gerenciamento de candidatos — Serviços — Parte 2
+- Desenvolvimento — Gerenciamento de candidatos — Repositório — Parte 1
+- Desenvolvimento — Gerenciamento de candidatos — Repositório — Parte 2
+- Desenvolvimento — Gerenciamento de candidatos — API — Parte 1
+- Desenvolvimento — Gerenciamento de candidatos — API — Parte 2
+- Desenvolvimento — Gerenciamento de Eleição — Publish
+- Desenvolvimento — Aplicação para votação — Parte 1
+- Desenvolvimento — Aplicação para votação — Parte 2
+- Desenvolvimento — Gerenciamento de eleição - Sincronismo
+- Desenvolvimento — Resultados
+- Demonstração e encerramento
 
 ### Desafios de Código Java intermediários: S.O.L.I.D
 
