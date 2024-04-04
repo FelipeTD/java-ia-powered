@@ -1035,11 +1035,27 @@
 
 #### Aprenda como relacionar Java, Spring Boot e Kafka
 - Conceitos iniciais
+  - Programação orientadas a eventos
+  - Consegue ter um controle melhor com uma aplicação baseada em eventos
 - Diagramando o projeto: Parte 1
+  - Diagrama sobre programação orientada a eventos
 - Diagramando o projeto: Parte 2
+  - Na programação orientada a eventos sempre tem um evento e espera um retorno desse evento
+  - Fica mais fácil de escalar a aplicação com esse modelo
+  - Esse modelo é mais complexo
 - Dúvidas e comentários
+  - Respondendo dúvidas e comentários
+  - Diferença entre tópico e partição
+    - Na fila vai distribuir os eventos entre os consumidores (partições)
+    - No tópico todos os consumidores recebem todos os eventos
 - Por dentro da interface da plataforma docker e requisitos básicos
+  - Para fazer o módulo precisa do docker
+  - Kafka foi instalado no docker e iniciado
 - Preparação da IDE Offset Explorer
+  - kafkatool.com/download.html
+  - Download e configuração do Offset Explorer
+  - Funcionou somente a versão 2 do Offset Explorer com kafka e zookeper
+  - Com a versão 3 ele roda corretamente no docker, mas não funciona no Offset Explorer
 
 #### Colocando a mão na massa
 - Preparando o projeto com Spring Boot
