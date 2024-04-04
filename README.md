@@ -1059,11 +1059,19 @@
 
 #### Colocando a mão na massa
 - Preparando o projeto com Spring Boot
+  - Criar o projeto no Initializr
 - Desenvolvimento inicial do projeto no Intellij
+  - Explicando as configurações necessárias no projeto para utilizar o Kafka
 - Testes iniciais da aplicação
+  - Primeiros envios de mensagens pelo kafka
 - Desenvolvimento do serviço de consumidor
+  - Parte de criar o consumidor dos eventos
 - Finalizando a conexão e alteração de dados
+  - Finalizando o consumidor
+  - Precisa fazer a gravação no banco de dados
+  - Precisa retornar para a fila que o dado foi salvo
 - Estrutura do projeto no github e comentários finais
+  - Comentários finais e projeto no github
 
 ### Desenvolvendo um sistema para eleição usando Quarkus Framework
 
