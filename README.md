@@ -1075,10 +1075,109 @@
 
 ### Desenvolvendo um sistema para eleição usando Quarkus Framework
 - Apresentação do `Expert`
+  - Lab com Quarkus
 - Orientações gerais e expectativas da aula
+  - Planejamento do escopo
+    - Definição de escopo
+      - Candidatos são listados, cadastrados e editados
+      - Todos os candidatos registrados participam de uma eleição, quando for iniciada
+      - Candidatos recebem votos de eleitores
+      - Resultado disponível em tempo real
+      - Requisitos não funcionais
+        - Confiabilidade
+        - Disponibilidade
+        - Interoperabilidade
+        - Escalabilidade
+    - Proposta arquitetural
+      - OpenTelemetry
+      - GrayLog e OpenSean
+      - Traefik
+      - Redis
+    - Proposta técnica
+      - Conteinerização
+        - Docker
+          - Explicação sobre o docker
+        - Docker compose
+          - Arquivo onde é definido as configurações necessárias para executar uma aplicação
+      - Tráfego
+        - Traefik
+          - É um ‘software’ de roteamento de tráfego e balanceamento de carga projetado para ser usado no docker
+          - Interessante para ser utilizado em containers e Kubernetes
+      - Armazenamento
+        - MariaDB
+          - Basicamente é o MySQL só que mais código aberto
+        - Redis
+          - Sistema de chave valor em memória
+      - Observabilidade
+        - Graylog
+          - Plataforma de gerenciamento de logs e análise de dados em tempo real
+        - OpenSearch
+          - Plataforma de busca e análise de dados em tempo real
+          - Baseado em Elasticsearch
+          - Compatível com o Kibana, Logstash e Beats
+        - MongoDB
+          - Banco de dados NoSQL
+          - Orientado a documentos
+        - Jaeger Tracing
+          - Plataforma de rastreamento
+      - Linguagem de programação
+        - Java 17
+      - Framework
+        - Quarkus
+          - Framework de código aberto para desenvolvimento de aplicativo Java
+          - Não precisa da JVM para executar aplicativo foi com quarkus
+      - Testabilidade
+        - Junit
+          - Teste de unidade
+          - Integração com Mockito e TestContainers
+        - TestContainers
+          - Utilizado para teste de componentes
+          - Simula um banco de dados ou outro componente
+      - Mapeamento Objeto Relacional
+        - Hibernate
+          - Framework de mapeamento objeto relacional
+          - Hibernate oferece cache de objetos
+      - Migração
+        - Flyway
+          - Migração de banco de dados
+          - Ótimo para projetos complexos
 - Preparação do ambiente e configuração
+  - SDKMAN!: Java 17 + GraalVM + Native Image
+    - quarkus create app
+  - Docker compose: Contêiners
+  - Build e Versionamento
+  - Deployment
+  - Sinceramente o pior conteúdo que já vi da DIO até o momento
+  - Explicou tudo, mas já estava tudo pronto
+  - Explicações rápidas para cada tecnologia e segue
+  - Nenhum desenvolvedor consegue aprender com um método de ensino desses
+  - É serio mesmo que o cara fala todos os comandos que devem ser executados e não executa nenhum?
+  - Eu pensei que seria feito o aplicativo do zero
+  - Não que era só executar o que já está feito sem entender nada e dar sorte de funcionar
+  - Dois GygaBytes de tamanho para baixar os containers (Pelo amor de Deus)
+  - 10 minutos só para baixar as imagens
+  - 10 containers para rodar 1 aplicação (Computador travou até o bloco de notas)
 - Setup das aplicações quarkus e discussão arquitetural
+  - Executar o quarkus no Intellij
+  - Pelo amor de Deus esse negócio de pausar para fazer uma leitura é ruim
+  - Arquitetura Hexagonal
+    - Coloca o núcleo da aplicação no centro
+  - Arquitetura Limpa
+    - Coloca a lógica de negócios no centro
+  - Arquitetura Cebola
+    - Coloca a lógica de negócios no centro
+  - Para executar o quarkus
+    - Entrar na pasta do projeto e executar comando `quarkus dev`
+    - Precisa do `JAVA_HOME` configurado
+  - Quarkus Dev Service
+    - Depois que a aplicação subir entre no navegador no link `localhost:8080/q/dev`
+    - Vai abrir uma lista de funções adicionais do quarkus
+  - Rodando a aplicação pelo Intellij
+    - Adicione uma classe Main na pasta infrastructure
+    - Anote a classe com @QuarkusMain
+    - Adicione um método main com o código Quarkus.run(args)
 - Desenvolvimento — Gerenciamento de candidatos — Serviços — Parte 1
+  - 
 - Desenvolvimento — Gerenciamento de candidatos — Serviços — Parte 2
 - Desenvolvimento — Gerenciamento de candidatos — Repositório — Parte 1
 - Desenvolvimento — Gerenciamento de candidatos — Repositório — Parte 2
@@ -1087,7 +1186,7 @@
 - Desenvolvimento — Gerenciamento de Eleição — Publish
 - Desenvolvimento — Aplicação para votação — Parte 1
 - Desenvolvimento — Aplicação para votação — Parte 2
-- Desenvolvimento — Gerenciamento de eleição - Sincronismo
+- Desenvolvimento — Gerenciamento de eleição — Sincronismo
 - Desenvolvimento — Resultados
 - Demonstração e encerramento
 
