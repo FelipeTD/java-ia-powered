@@ -1177,8 +1177,21 @@
     - Anote a classe com @QuarkusMain
     - Adicione um método main com o código Quarkus.run(args)
 - Desenvolvimento — Gerenciamento de candidatos — Serviços — Parte 1
-  - 
+  - Vai utilizar TDD
+  - Interessante a utilização da biblioteca `Instancio`
+  - O jeito de pensar no desenvolvimento com TDD é diferente
 - Desenvolvimento — Gerenciamento de candidatos — Serviços — Parte 2
+  - Desenvolvendo o restante dos métodos do CRUD de candidatos
+  - Utilizando o `Query Object`
+  - `FreeBuilder` não é legal de ser utilizado
+  - Comando para rodar o `CI/CD`
+  - `./cicd-build.sh election-management`
+  - Comando para deploy da aplicação
+  - `./cicd-blue-green-deployment.sh election-management 1.0.2`
+  - A versão é incrementada a cada nova execução do build
+  - Esses comandos só funcionaram no `git bash`
+  - URL para visualizar a aplicação: http://localhost:8080/dashboard#/
+  - Registros da aplicação: 
 - Desenvolvimento — Gerenciamento de candidatos — Repositório — Parte 1
 - Desenvolvimento — Gerenciamento de candidatos — Repositório — Parte 2
 - Desenvolvimento — Gerenciamento de candidatos — API — Parte 1
