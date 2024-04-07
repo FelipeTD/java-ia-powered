@@ -1191,8 +1191,14 @@
   - A versão é incrementada a cada nova execução do build
   - Esses comandos só funcionaram no `git bash`
   - URL para visualizar a aplicação: http://localhost:8080/dashboard#/
-  - Registros da aplicação: 
+  - Registros da aplicação: http://logging.private.dio.localhost/
+  - A parte de logs não funciona
 - Desenvolvimento — Gerenciamento de candidatos — Repositório — Parte 1
+  - Migration e Hibernate
+  - Querys complexas
+  - TestContainers rodando toda a hora, pois deixa um container consumindo memória
+  - Conversão do objeto não foi feita com sucesso
+  - Não da para ver que comandos ele executa, pois, ele executa com meio segundo
 - Desenvolvimento — Gerenciamento de candidatos — Repositório — Parte 2
 - Desenvolvimento — Gerenciamento de candidatos — API — Parte 1
 - Desenvolvimento — Gerenciamento de candidatos — API — Parte 2
