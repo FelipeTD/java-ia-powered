@@ -1200,9 +1200,29 @@
   - Conversão do objeto não foi feita com sucesso
   - Não da para ver que comandos ele executa, pois, ele executa com meio segundo
 - Desenvolvimento — Gerenciamento de candidatos — Repositório — Parte 2
+  - JSON Rest Services
+  - DTO: Data Transfer Object
+  - Integration Test
 - Desenvolvimento — Gerenciamento de candidatos — API — Parte 1
+  - Todas as classes terem o mesmo nome é muito ruim para leitura
+  - Colocar caminho do diretório para diferenciar o arquivo é muito chato
+  - Utilizou o Rest Assured
+  - Adicionou o Swagger na aplicação
+  - Os testes rodando a todo o momento não é uma coisa boa
 - Desenvolvimento — Gerenciamento de candidatos — API — Parte 2
+  - Terminando a parte de API da aplicação
+  - Adicionando testes de integração
+  - Comando para executar teste de integração
+  - `./mvnw verify -DskipITs=false -Dquarkus.log.handler.gelf.enabled=false -Dquarkus.opentelemetry.enabled=false -Dquarkus.datasource.jdbc.driver=org.mariadb.jdbc.Driver`
+  - A quantidade de containers é tão grande que o próprio professor se perde no que funciona e no que não funciona
+  - URL do Jaeger: http://telemetry.private.dio.localhost/
+  - URL da aplicação: http://vote.dio.localhost/api/candidates
 - Desenvolvimento — Gerenciamento de Eleição — Publish
+  - Link da próxima aula: https://github.com/thpoiani/lab-quarkus/tree/video07
+  - Gerenciamento de eleições
+  - Redis
+  - Event Driven
+    - Redis Pub/Sub
 - Desenvolvimento — Aplicação para votação — Parte 1
 - Desenvolvimento — Aplicação para votação — Parte 2
 - Desenvolvimento — Gerenciamento de eleição — Sincronismo
