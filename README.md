@@ -1223,6 +1223,20 @@
   - Redis
   - Event Driven
     - Redis Pub/Sub
+  - Dados de mock no site https://mockaroo.com/
+  - Comando para filtrar containers
+    - docker ps | grep redis
+  - Comando para acessar o banco de dados
+    - docker exec -it 0dacae63ae9c mysql -uquarkus -pquarkus quarkus
+  - Comando para acessar o redis
+    - docker exec -it 44bbb3b1632b redis-cli
+  - Comando para mostrar as chaves no redis
+    - keys *
+  - Comando para mostrar os dados da chave
+    - ZRANGE election:73923f65-75db-4662-8270-494e591c1430 0 -1 WITHSCORES
+  - Comando para ler as mensagens postadas no redis
+    - SUBSCRIBE elections
+  - O `redis` é usado como um `broker` de mensagens
 - Desenvolvimento — Aplicação para votação — Parte 1
 - Desenvolvimento — Aplicação para votação — Parte 2
 - Desenvolvimento — Gerenciamento de eleição — Sincronismo
