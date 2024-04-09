@@ -1238,7 +1238,25 @@
     - SUBSCRIBE elections
   - O `redis` é usado como um `broker` de mensagens
 - Desenvolvimento — Aplicação para votação — Parte 1
+  - Lifecycle onStartup
+    - @Startup: Quando a aplicação for iniciado, a classe será injetada
+  - Redis
+    - Redis Pub/Sub
+      - Comando para adicionar uma eleição
+        - ZADD election:election-id 0 "candidate-1" 0 "candidate-2"
+      - Comando para publicar a eleição
+        - PUBLISH elections election-id
+  - Memoization/Caching
+  - Reactive
+    - Mutiny
+      - Mostrou uma forma de trabalhar com linguagem reativa no quarkus
 - Desenvolvimento — Aplicação para votação — Parte 2
+  - Adicionando o quarkus-cache
+  - Utiliza o @CacheResult(cacheName = "memoization") para guardar em memória
+  - Uma afirmação muito interessante
+    - Existe uma validação na aplicação que não retorna se deu certo ou erro
+    - Isso é útil quando alguém tenta realizar um ataque a aplicação de força bruta
+    - Quem realizar o ataque não irá saber se funciona ou não
 - Desenvolvimento — Gerenciamento de eleição — Sincronismo
 - Desenvolvimento — Resultados
 - Demonstração e encerramento
