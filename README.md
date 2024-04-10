@@ -1258,6 +1258,11 @@
     - Isso é útil quando alguém tenta realizar um ataque a aplicação de força bruta
     - Quem realizar o ataque não irá saber se funciona ou não
 - Desenvolvimento — Gerenciamento de eleição — Sincronismo
+  - Utilização de Scheduler
+  - Utilização de consulta nativa
+  - Precisa dos `inserts` na segunda migração para funcionar
+  - Comando para adicionar um voto
+    - zincrby election:4e24f52c-aa85-446c-ab2e-6801887ef8e3 1 ff98c649-d71d-4e8a-a08b-d3d2220e8060
 - Desenvolvimento — Resultados
 - Demonstração e encerramento
 
