@@ -1264,6 +1264,15 @@
   - Comando para adicionar um voto
     - zincrby election:4e24f52c-aa85-446c-ab2e-6801887ef8e3 1 ff98c649-d71d-4e8a-a08b-d3d2220e8060
 - Desenvolvimento — Resultados
+  - Qualifier
+    - Foi criada uma anotação @Principal para definir quem seria instanciado
+  - Rest Client
+    - Extensões adicionadas
+      - quarkus extension add 'quarkus-rest-client' 'quarkus-rest-client-jackson'
+      - quarkus extension add 'quarkus-resteasy-reactive-jackson' 'quarkus-rest-client-mutiny'
+  - Server Sent Events
+    - @RestStreamElementType deixa a conexão aberta sempre escutando por resultados
+  - O `voting-app` funciona como um API Gateway
 - Demonstração e encerramento
 
 ### Desafios de Código Java intermediários: S.O.L.I.D
