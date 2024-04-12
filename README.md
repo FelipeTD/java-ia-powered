@@ -1274,6 +1274,31 @@
     - @RestStreamElementType deixa a conexão aberta sempre escutando por resultados
   - O `voting-app` funciona como um API Gateway
 - Demonstração e encerramento
+  - Demonstração
+    - Comando do graylog
+      - curl -H "Content-Type: application/json" -H "Authorization: Basic YWRtaW46YWRtaW4=" -H "X-Requested-By: curl" -X POST -v -d '{"title":"udp input","configuration":{"recv_buffer_size":262144,"bind_address":"0.0.0.0","port":12201,"decompress_size_limit":8388608},"type":"org.graylog2.inputs.gelf.udp.GELFUDPInput","global":true}' http://logging.private.dio.localhost/api/system/inputs
+    - Comando para conectar no banco de dados
+      - mysql -h quarkus-database-1 -u election-management-user -pelection-management-password election-management
+    - Comando para conectar no redis
+      - docker-compose exec -it caching redis-cli
+    - URL do graylog
+      - logging.private.dio.localhost
+    - URL do Jaeger
+      - http://telemetry.private.dio.localhost/
+    - URL do dashboard da aplicação
+      - http://localhost:8080/dashboard#/
+    - Comando para escalar o voting-app para 4 containers
+      - TAG=1.1.0 docker-compose up -d voting-app --scale voting-app=4 --no-recreate
+  - Load Testing
+    - Foi feito com python utilizando LOCUST
+    - Fazer um random utilizando o JMeter para treinar
+    - URL para realizar um POST para votar
+      - http://vote.dio.localhost/api/voting/elections/{electionID}/candidates/{candidateID}
+    - Exemplo
+      - http://vote.dio.localhost/api/voting/elections/2b61db8d-f823-4826-af45-3822b6360fff/candidates/0388f045-5dfb-4bf3-87f9-1be3073d5393
+  - Client React
+    - `Site` simples em react para mostrar os resultados
+  - Recomendou vários desafios para adicionar mais coisas na aplicação
 
 ### Desafios de Código Java intermediários: S.O.L.I.D
 
