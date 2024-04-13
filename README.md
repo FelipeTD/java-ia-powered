@@ -1308,16 +1308,54 @@
 ## AWS Cloud Computing para `soluções Java`
 
 ### Criando a sua conta na AWS
-
-#### Criando a sua conta na AWS
 - Apresentação
+  - Criação de conta na AWS
 - Criando uma conta na AWS
+  - Email: fedispatotortora@gmail.com
+  - Nome da conta: fedispatotortora
+  - Usuário root é o proprietário da conta
 - Modelo de responsabilidade compartilhada e entendendo os níveis de gratuidade AWS
+  - AWS gerencia os componentes fisicos e a sua segurança
+  - O Cliente gerecia os softwares instalados nesses containers
+  - Não é feita cobrança para ter uma conta na AWS
+  - Mostrando serviços gratuitos
+  - Para encontrar serviços gratuitos pesquise por serviços gratuitos AWS
 - Conceito do menor privilégio: Criando um usuário e um grupo de usuário
+  - IAM: Identity Access Management
+  - Não é recomendado utilizar a conta raiz: ela tem acesso a tudo
+  - O correto é conceder ao usuário o minimo necessário de privilégios na AWS
+  - Utilizar grupos para gerenciar permissões
+  - Explicação de como criar um usuário
+  - MFA criado com sucesso
+  - Passo a passo para criar usuários
+    - Acessar (opção) usuários
+    - Criar usuário
+      - fedispato-admin
+    - Criar Grupo
+      - admin-group
+    - Revisar e Criar
+  - Configurar usuário
+    - Entrar no usuário para edição na parte de IAM à conta root
+    - Acessar credenciais de segurança
+    - Copiar endereço de acesso no console para usuários
+    - Clicar em Habilitar acesso ao console
+      - Habilitar
+      - Senha personalizada
+      - Aplicar
+  - Precisa habilitar o MFA para a conta root e conta admin
 - Conhecendo o painel de faturamento da AWS
+  - Na barra de pesquisa procurar por `Billing`
+  - Na conta nova não tem nenhum dado, pois acabou de ser criada
+  - Para acessar pela conta admin precisa configurar
+  - Vou deixar somente na conta root por enquanto
 - Encerramento
+  - Finalizado a criação de conta na AWS
 
 ### Introdução ao conceito de `Cloud`
+- Afinal, o que é cloud computing
+- Benefícios de cloud computing
+- Modelos de serviços
+- Modelos de implantação
 
 ### Infraestrutura Global AWS
 
