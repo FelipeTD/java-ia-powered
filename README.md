@@ -1301,10 +1301,21 @@
   - Recomendou vários desafios para adicionar mais coisas na aplicação
 
 ### Desafios de Código Java intermediários: S.O.L.I.D
+- 5 desafios sobre SOLID
+- Um para cada conceito
+- Desafios realizados na plataforma da DIO
 
 ## AWS Cloud Computing para `soluções Java`
 
 ### Criando a sua conta na AWS
+
+#### Criando a sua conta na AWS
+- Apresentação
+- Criando uma conta na AWS
+- Modelo de responsabilidade compartilhada e entendendo os níveis de gratuidade AWS
+- Conceito do menor privilégio: Criando um usuário e um grupo de usuário
+- Conhecendo o painel de faturamento da AWS
+- Encerramento
 
 ### Introdução ao conceito de `Cloud`
 
