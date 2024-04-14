@@ -1353,11 +1353,52 @@
 
 ### Introdução ao conceito de `Cloud`
 - Afinal, o que é cloud computing
+  - Objetivo é entender o que é `cloud computing` e os seus benefícios
+  - Mundo pré cloud
+    - Modelo cliente servidor
+    - Ambientes on-premises
+    - Virtualização
+  - Beneficio chave
+    - Pagamento conforme uso
+  - Definição 
+    - É a entrega de recursos de `TI` sob demanda por meio da Internet com definição de preço de pagamento conforme uso
 - Benefícios de cloud computing
+  - Troque despesas iniciais por despesas variáveis
+  - Pare de tentar adivinhar a capacidade
+  - Beneficie-se de enormes economias de escala
+  - Aumente a velocidade e agilidade
+  - Ter alcance global em minutos
 - Modelos de serviços
+  - Também chamado modelos de computação em nuvem
+  - Escolha com base no usuário do serviço e o seu objetivo/responsabilidade
+  - IaaS
+    - Infraestrutura como serviço
+    - Componentes básicos de TI
+    - Disco, memória, CPU
+    - Usuário: Sysadmin
+    - Usuário gerencia infraestrutura
+    - Amazon EC2
+  - PaaS
+    - Plataforma como serviço
+    - Plataforma para implantar (deploy)
+    - Não se preocupe com infraestrutura
+    - Usuários: Desenvolvedores
+    - Elastic Beanstalk
+  - Saas
+    - `Software` como serviço
+    - Produto completo, executado e gerenciado pelo provedor
+    - Não se preocupe com infraestrutura
+    - Pense apenas em utilizar
+    - Gmail
 - Modelos de implantação
+  - Se relaciona com como os recursos de computação estão estruturados e distribuídos
+  - É onde o serviço está implantado
+  - On-premises
+  - Híbrido
+  - Cloud
 
 ### Infraestrutura Global AWS
+
 
 ### Computação em AWS
 
