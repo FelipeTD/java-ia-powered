@@ -1398,7 +1398,57 @@
   - Cloud
 
 ### Infraestrutura Global AWS
-
+- O que é infraestrutura global AWS
+  - Compreender o que é infraestrutura global AWS
+  - Estrutura adjacente bem como também conhecer sobre provisão de recursos e interação com serviços
+  - Infraestrutura de datacenters em todo o mundo que fornecem os diversos serviços que pode utilizar na AWS
+  - Composto por regiões e zonas de disponibilidade
+  - Vantagens: Alta disponibilidade, Tolerância a falhas
+  - 87 zonas de disponibilidade em 27 regiões geográficas
+  - Planos divulgados para mais 21 zonas de disponibilidade e outras 7 regiões da AWS
+  - Austrália, Canadá, Índia, Israel, Nova Zelândia, Espanha e Suiça
+- Regiões e zonas de disponibilidade
+  - Regiões
+    - Locais onde são hospedados os (data) centers da AWS
+    - Cada região possuem locais isolados chamados zonas de disponibilidade
+    - Todas as regiões são conectadas com rede de alta velocidade
+    - Isolamento de dados
+    - Regulação de dados local
+  - Zonas de disponibilidade
+    - Também chamadas de AZs (Availibility Zones)
+    - Agrupamento de datacenters isolados dentro de uma região
+    - Rede, energia e conectividade redundates
+    - Próximas o suficiente para manter baixa latência, longe o suficiente para evitar que um desastre afete mais de uma AZ
+    - Recomendação: Execute pelo menos em duas AZs
+- Pontos de presença
+  - Chamados de `Edge Locations`, locais de borda ou redes de borda
+  - Funcionam como pontos específicos pelo globo para distribuir conteúdo de forma rápida
+  - Exemplos de serviços nos locais de borda: Route 53(DNS) e Cloud Front(CDN)
+  - Amazon CloudFront
+    - Serviço de entrega de conteúdo: CDN
+    - Melhora o desempenho do seu serviço (baixa latência, alta taxa de transferência)
+    - Provê conteúdo o mais próximo possível do seu usuário
+  - Amazon Route 53
+    - Serviço de DNS
+    - Ajuda os clientes a redirecionar corretamente as requisições
+- Provisionamento de recursos na AWS
+  - Console de gerenciamento
+    - Acessar via URL na inteface web
+      - https://aws.amazon.com/pt/console/
+  - AWS CLI
+    - Acessar via CLI pelo windows, linux ou mac
+    - Instalado na sua máquina
+    - Opera com APIs da AWS através de linha de comando
+  - SDKs
+    - Utilizado dentro da sua API
+    - Acesso as APIs AWS através de SDK
+    - SDK possui versões em diversas linguagens, como: Java, C#, Go, Python e Javascript
+  - Provisionamento de infraestrutura
+    - Elastic Beanstalk
+      - Automatiza o processo de deploy da aplicação
+    - CloudFormation
+      - IaaC
+      - Automatiza o processo de construção de infraestrutura na AWS
 
 ### Computação em AWS
 
