@@ -1451,8 +1451,121 @@
       - Automatiza o processo de construção de infraestrutura na AWS
 
 ### Computação em AWS
+- Conhecer os principais serviços de computação na AWS
+- Elastic Compute Cloud - EC2
+  - Para montar um, data center precisa de muitas configurações
+  - É muito custoso ter uma estrutura própria
+  - E se todo o investimento nesse data center não for necessário dada a sua demanda?
+  - E se um dia seu negócio crescer e a infraestrutura não suportar a demanda de usuários?
+  - Seria ideal ter
+    - Economia de recursos e custo
+    - Escalabilidade
+    - Elasticidade
+    - Disponibilidade
+  - EC2
+    - Capacidade computacional segura e redimensionável
+    - Computação: CPU, Memória, Rede, Armazenamento, Sistema operacional
+    - Definição de preço conforme uso e modalidades específicas a necessidade
+    - Instâncias com tipos otimizados para a sua atividade
+  - Conceito chave/instância
+    - Servidor virtual na nuvem AWS
+    - Possui configurações de memória, CPU, disco, rede e sistema operacional
+  - Tipos de instância
+    - Diferentes tipos para casos de uso diferentes
+    - Várias combinações diferentes de configurações
+    - Uso geral
+      - Equilíbrio de recursos de computação, memória e rede
+      - Indicado para servidores de aplicativos, jogos, backend, banco de dados pequenos
+    - Otimizadas para computação
+      - Ideal para cargas de trabalho que exigem processadores de alto desempenho
+      - Pode ser usado para os mesmos casos de uso da categoria de uso geral
+      - Quando se deseja um melhor desempenho
+      - Ideal também para processamento em lote
+    - Otimizadas para memória
+      - Projeto para alto desempenho no processamento de abundantes quantidades de informações na memória
+      - Exemplo: Banco de dados de alto desempenho, processamento em tempo real de dados
+    - Computação acelerada
+      - Usa aceleração de `hardware` ou coprocessadores para executar algumas funções de forma mais eficiente do que em `software` executado direto na CPU
+      - Exemplos de casos de uso: Cálculo de ponto flutuante, processamento de gráficos e correspondência de padrões de dados
+    - Otimizadas para armazenamento
+      - Ideal para cargas de trabalho que exigem acesso de leitura e gravação com grande volume de dados
+      - Casos de uso: Sistemas de arquivos distribuídos, Data warehouse, sistema de processamento de transações `online`
+- Amazon EC2 Autoscaling
+  - Precisa resolver o problema de capacidade da máquina
+  - Ao elevar ao máximo é possível atender todos os clientes, mas fica com uma parte sem utilizar
+  - Outra possibilidade é deixar na média, mas pode ter problema para utilizar o programa
+  - Escalar conforme necessidade
+  - O EC2 Autoscalign provê escalabilidade horizontal para os seus serviços
+  - Melhora a tolerância a falhas com identificação de instâncias indisponíveis e implantação multi-AZ
+  - Melhor gerenciamento de custos
+  - Configuração
+    - Tamanho minimo
+    - Capacidade desejada
+    - Escala conforme necessidade
+    - Tamanho máximo
+  - Abordagens
+    - Scaling Preditivo
+      - Já sabe quando irão ocorrer os picos de utilização
+    - Scaling Dinâmico
+      - Ao atingir uma meta de utilização o serviço é escalado
+    - É possível combinar os dois
+- Elastic Load Balancing - ELB
+  - Utilizado quando uma instância recebe muitas requisições
+  - Ele decide para qual instância será enviada uma requisição
+  - Balanceamento de carga de aplicação, gateway e rede
+  - Escopo regional
+  - Escala de forma automática, sem custos
+  - Junto ao EC2 Autoscaling permite criar aplicações altamente disponíveis
+- Serviços de mensageria
+  - SQS
+    - Simple Queue Service
+    - É um serviço de fila
+    - É assincrona
+    - Sistema de enfileiramento de mensagens
+    - Um usuário envia uma mensagem para a fila, o outro usuário lê, processa e exclui da fila
+  - SNS
+    - Simple Notification Service
+    - Também é um serviço de mensageria
+    - É configurado os serviços com interesse nessa mensagem
+    - Sistema pub/sub
+    - Utiliza tópicos como estrutura
+    - Usuário publica mensagens no tópico e assinantes escutam
+- Computação sem servidor
+  - Também chamado pelo termo `Serveless`
+  - O termo sem servidor significa que o código é executado em servidores sem precisar provisionar ou gerenciar esses servidores
+  - Capacidade automaticamente ajustada pelo serviço, sem necessidade de nenhuma configuração
+  - AWS Lambda
+    - Execução de código sem provisionar servidores
+    - Código organizado em funções
+    - Pode escolher a linguagem de programação da sua preferência
+    - Executa a partir de eventos ou chamadas diretas a API do Lambda
+- Containers em AWS
+  - Forma padrão de empacotar o seu aplicativo num único objeto
+  - Executados como processos isolados
+  - Docker
+  - Construa uma imagem
+  - Faça uma esteira de deploy
+  - Rode em qualquer lugar
+  - Escala rapidamente
+  - ECR: Elastic Container Registry
+    - Escreva um código
+    - Ele faz o controle de todas as imagens de uma aplicação
+    - Roda containers no ECS, EKS e On-Premises
+    - ECS é um serviço de execução de containers docker na AWS
+  - EKS: Elastic Kubernetes Service
+    - Provisiona um EKS Cluster
+    - Deploy dos containers
+    - Conecta no EKS
+    - Roda aplicaçãoes kubernetes
+  - AWS Fargate
+    - Pode usar ECS ou EKS
+    - Tem uma dificuldade menor para utilizar as aplicações
+    - Consegue rodar de uma forma mais rápida
 
 ### Redes em AWS
+- Amazon VPC
+- Conectividade com AWS
+- Sub-redes e listas de controle de acesso
 
 ### Armazenamento e banco de dados AWS
 
