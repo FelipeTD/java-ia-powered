@@ -1563,11 +1563,54 @@
     - Consegue rodar de uma forma mais rápida
 
 ### Redes em AWS
+- Conhecer os principais conceitos de rede relacionado a AWS
 - Amazon VPC
+  - VPC: Virtual Private Cloud
+  - Permite construir e configurar redes virtuais na AWS
+  - Sub-redes: Privadas e públicas
+  - Tudo começa num VPC
 - Conectividade com AWS
+  - Region
+  - VPC
+  - AZ (Availability Zone)
+  - Public Subnet
+  - Gateway da Internet
+  - Gateway Privado Virtual (Virtual Private Gateway)
+    - Para conectar uma rede privada na rede da AWS precisa de um 
+  - AWS Direct Connect
+    - Servidor privado conectando diretamente na AWS
 - Sub-redes e listas de controle de acesso
+  - Como que os dados trafegam numa VPC
+    - Gateway de internet
+  - Network ACLs
+    - Lista de controle de acesso
+    - Controle de tráfego de entrada e saída de sub-redes
+    - Comportamenteo stateless
+    - Por padrão, permite todo o tráfego de entrada e saída
+  - Segurança para recursos
+  - Grupos de segurança
+    - Lista de controle de acesso à rede
+    - Mais uma camada de segurança a nivel de segurança EC2
+    - Controle de tráfego de entrada e saída de instâncias EC2
+    - Comportamento Stateful
+    - Por padrão, nega todo o tráfego de entrada e permite todo o tráfego de saída
+  - Revisando
+    - Comportamento Stateless
+      - `Network ACLs`: Segurança a nível de subnet
+      - Grupos de segurança: Por padrão permite todo o tráfego de entrada e saída
+    - Comportamento Stateful
+      - `Network ACLs`: Segurança em nível de instância EC2
+      - Grupos de segurança: Por padrão nega todo o tráfego de entrada e permite todo fluxo de saída
 
 ### Armazenamento e banco de dados AWS
+- Armazenamento de dados em nuvem
+- Amazon Elastic Block Store: EBS
+- Amazon S3
+- EFS: Amazon Elastic File System
+- Amazon Relational Database Service
+- DynamoDB
+- Outros serviços de banco de dados
+- Big Data com Amazon Redshift
 
 ### Redução de custos em farmácias com AWS
 
