@@ -1604,13 +1604,197 @@
 
 ### Armazenamento e banco de dados AWS
 - Armazenamento de dados em nuvem
+  - Tipos de armazenamento
+    - Armazenamento de objetos (Object Storage)
+      - Dados como objetos (arquivos e metadados)
+      - Dados não estruturados
+      - Casos de uso: Data lakes, Mídias, Backup e recuperação
+    - Armazenamento de arquivos (File Storage)
+      - Sistema de arquivos compartilhados
+      - Permite acesso por servidores, aplicações e usuários
+      - Analogia com pastas compartilhadas numa rede
+      - Casos de uso: Ferramentas de desenvolvimento, diretórios pessoais
+    - Armazenamento de blocos (Block Storage)
+      - HDD, SSD
+      - Dispositivo com diferentes configurações de leitura e escrita
+      - Casos de uso: Máquinas virtuais, containers, banco de dados
 - Amazon Elastic Block Store: EBS
+  - Volume Instance Store
+    - Armazenamento de blocos
+    - Discos anexados fisicamente ao computador `host`
+    - Ideal para dados de armazenamento temporário como `buffers`, `caches` e `dados rascunho`
+  - Dados serão perdidos se
+    - Falha de disco de uma unidade
+    - Instância parada
+    - Instância hiberna
+    - Instância encerrada
+  - Armazenamento de blocos
+  - Block, blocos = HD, físico
+  - Projetado para Amazon Elastic Compute Cloud (EC2)
+  - HDs são chamados "volumes"
+  - Como funciona
+    - Defina o tipo de volume
+    - Escolha o tamanho e configurações
+    - Anexe o volume numa instância EC2
+  - HDD
+    - Mais lento
+    - Mais barato
+    - Dois tipos: Disco rígido frio e otimizado para throughput
+  - SSD
+    - Mais rápido
+    - Mais caro
+    - Dois tipos: Volumes SSD de uso geral e IOPS provisionados
+  - Como funcionam os backups
+    - Snapshots
+    - Backup incremental
 - Amazon S3
+  - Serviço de armazenamento de objetos
+  - Simple Storage Service
+  - Possui dados, metadados e chave
+  - Composição de um objeto
+  - Chave: Nome que atribui ao objeto. Usado para recuperar o objeto
+  - Valor: O conteúdo que está armazenado
+  - Metadados: Um conjunto de pares de nome-valor com o qual é possível armazenar informações relacionadas ao objeto
+  - Objetos estão no bucket
+  - Buckets S3
+    - Antes de um ‘upload’ do seu objeto, precisa criar um
+    - É um container para objetos armazenados no `Amazon S3`
+    - Pode armazenar qualquer número de objetos num bucket
+    - Objetos podem ter de 0 até 5 ‘terabytes’ de tamanho
+    - Pode ter até 100 buckets na sua conta
+    - Pode controlar o acesso por objeto
+    - Utilizar versionamento de objetos
+  - Casos de uso
+    - Data lakes
+    - Arquivamento de dados
+    - Hospedagem de `sites estáticos`
+  - Classes de armazenamento
+    - Categorias para adequar melhor as necessidades de negócio e custo
+    - Fatores importantes na seleção de uma categoria
+    - Com que frequência você planeja recuperar os seus dados?
+    - Os seus dados precisam estar muito ou pouco disponíveis
+    - S3 Standard
+      - Projetado para dados acessados com frequência
+      - Armazena dados num mínimo de três zonas de disponibilidade
+      - Boa escolha para diversos casos de uso como `sites`, distribuição de conteúdo e análise de dados
+      - Custo mais alto
+    - S3 Standard-Infrequent Access (S3 Standard-IA)
+      - Semelhante ao `S3 Standard`
+      - Armazena dados num mínimo de três zonas de disponibilidade
+      - Ideal para dados acessados com pouca frequência
+      - Taxa por GB de armazenamento e recuperação mais baixo
+    - S3 One Zone-Infrequent Access (S3 One Zone - IA)
+      - Tem um preço de armazenamento menor do que o `S3 Standard - IA`
+      - Armazena dados numa única zona de disponibilidade
+      - Cenários: Quer economizar custos com armazenamento
+      - Pode reproduzir facilmente os seus dados em caso de falha na zona de disponibilidade
+    - S3 intelligent-Tiering
+      - Ideal para dados com padrões de acesso desconhecidos ou em alteração
+      - Gerencia automaticamente o ciclo de vida dos objetos armazenados otimizando custos
+      - Requer uma pequena taxa mensal de monitoramento e automação por objeto
+    - S3 Glacier Instant Retrieval
+      - Ideal para dados de longa duração
+      - Raramente acessados, mas que exigem recuperação rápida (milissegundos)
+      - Oferece acesso tão rápido quanto `Standard` e `Standard-IA`
+      - Ideal para dados acessados uma vez por trimestre
+    - S3 Glacier Flexible Retrieval
+      - Para dados que não requerem acesso imediato
+      - Ideal para casos de uso de `backups` não urgentes, recuperação de desastres
+      - Usuário pode escolher qual velocidade de recuperação
+      - Ideal para dados acessados 1 ou 2 vezes por ano
+    - S3 Glacier Deep Archive
+      - Suporte a retenção e preservação digital de longo prazo para dados que podem ser acessados 1 ou 2 vezes por ano
+      - Ideal para empresas que precisam manter dados por conformidades legais por 7 a 10 anos
+      - Recuperação de dados em até 12 horas
 - EFS: Amazon Elastic File System
+  - Fornece um sistema de arquivos 
+  - Servless e totalmente elástico
+  - Escala até petabytes
+  - Aumentar e diminuir conforme edição e remoção de arquivos
+  - Compatível com o protocolo NFS (Network file system)
+  - Pode ser acessado por EC2, lambda e ECS
+  - Acesso simultâneo aos mesmos dados sem problemas de desempenho
+  - Classes de armazenamento
+    - Padrão (instância regional): `Standard` e `Standard-IA` (Infrequent Access)
+    - Uma AZ: One Zone e One Zone - IA (Infrequent Access)
 - Amazon Relational Database Service
+  - Banco de dados relacional
+    - Relação de dados
+    - Facilita a compreensão das informações
+    - SQL como linguagem de consulta
+    - RDBMS (Sistema de gerenciamento de banco de dados)
+    - Vendors
+      - Postgres
+      - Oracle
+      - MySQL
+      - SQL Server
+    - Utilizado com o EC2
+    - Usa, você gerencia
+  - RDS
+    - Facilita configuração e provisionamento de `hardware`
+    - `Patches` automatizados
+    - Backups
+    - Redundância
+    - Failover e recuperação de desastres
+    - Mecanismos compatíveis
+      - MySQL
+      - PostgreSQL
+      - MariaDB
+      - Oracle
+      - SQL Server
+  - Amazon Aurora
+    - Servless
+    - Mecanismos compatíveis: PostgreSQL e MySQL
+    - Preço 1/10 de outros vendors
+    - Replicação multirregional
+    - Até 15 réplicas de leituras
+    - Backup contínuo via S3
 - DynamoDB
+  - NoSQL
+  - Gerenciado (Servless)
+  - Desempenho abaixo de 10 milissegundos
+  - Escala automaticamente
+  - Replicação de dados regional
+  - Caso de uso: Muitos dados, baixa latência
+  - A estrutura dos dados é um `JSON`
+  - Tabelas: Coleção de dados
+  - Item: Grupo de atributos identificável
+  - Atributo: Dados existentes dentro de cada ‘item’
 - Outros serviços de banco de dados
+  - A necessidade de negócio escolhe o banco de dados
+  - Amazon DocumentDB
+    - Banco de dados de documentos
+    - Gerenciamento de conteúdo
+    - Catálogos, perfis de usuário
+    - Compatível com cargas de trabalho MongoDB
+  - Amazon Neptune
+    - Redes sociais, mecanismos de recomendação, descoberta de fraude e gráficos de conhecimento
+    - Banco de dados de grafos
+  - Amazon QLDB
+    - `Quantum Ledger Database`
+    - Banco de dados serviço `ledger`
+    - Imutabilidade
+    - Indicado para históricos, registros digitais, transações financeiras
+  - Amazon DynamoDB Accelerator
+    - Chamado também de DAX
+    - Camada de `cache` nativa para otimizar tempo de leitura de dados
+  - Amazon Elasticache
+    - Camada de cache sobre banco de dados
+    - Compatível com Redis e Memcached
 - Big Data com Amazon Redshift
+  - Existem muitas fontes de dados
+  - Perguntas
+    - Quantas vendas o aplicativo fez desde o início do lançamento?
+    - Quantos usuários fizeram cadastro na última hora?
+  - Contexto
+    - Velocidade de geração de dados
+    - Variedade de fontes de dados
+    - Quando os dados precisam responder com inteligência de negócio
+  - Amazon Redshift
+    - Serviço de data warehouse para análise de Big Data
+    - Oferece coletar informações de muitas fontes de dados
+    - Projeta relações e tendências de dados
+    - Usando redshift spectrum é possível rodar comandos SQL em cima de todas as fontes de dados agrupadas
 
 ### Redução de custos em farmácias com AWS
 
