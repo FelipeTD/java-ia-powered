@@ -1797,7 +1797,44 @@
     - Usando redshift spectrum é possível rodar comandos SQL em cima de todas as fontes de dados agrupadas
 
 ### Redução de custos em farmácias com AWS
+- Missão: Operação farmacêutica
+  - Entender um momento de uma empresa que não utiliza nuvem
+  - Criar um arquivo de texto explicando as vantagens de 3 ferramentas da nuvem
+- Modelo de relatório de entrega
+  - Tudo que estiver entre colchetes deve ser alterado
+- Entendendo o desafio
+  - Entrega do projeto pelo github
 
 ### Publicando sua API REST na nuvem usando Spring Boot 3, Java 17 e Railway
+- O que vamos desenvolver neste lab
+  - Projeto de API desde a criação até o deploy na AWS
+  - Criação e versionamento da API
+    - Spring Initialzr e GitHub
+  - Abstração e Modelagem do Domínio
+    - Figma, ChatGPT (Mermaid) e JPA
+  - Implementação do backend
+    - Spring Boot e Java 17
+  - Deploy e monitoramento
+    - Railway (PostgreSQL e CI/CD da API)
+  - Desafio: Cria a sua própria API
+    - Explore um novo domínio de aplicação a sua escolha
+- Criação e importação do projeto
+  - Configurando com o Spring Initializr
+  - Importação feita no Eclipse e Intellij
+  - Será utilizado o Intellij
+- Versionamento no github
+  - Enviando projeto para o Github pelo Intellij
+- Abstração inicial do domínio do figma
+- Diagrama de classes com ChatGPT e Mermaid
+- Mapeamento Objeto Relacional (ORM)
+- Hotfix 'precision' e 'scale'
+- Implementando a camada de negócio
+- Expondo endpoints REST e testando a API
+- Tratamento de exceções em APIs REST
+- Provisionando o PostgreSQL (Railway) e criando o perfil de PRD
+- Deploy da API na nuvem (Railway)
+- Correção de CORS e conclusão
+- Desafio! Crie a sua própria API
+- Entendendo o desafio
 
 ### Avalie este Bootcamp
