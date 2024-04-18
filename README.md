@@ -1825,7 +1825,72 @@
 - Versionamento no github
   - Enviando projeto para o Github pelo Intellij
 - Abstração inicial do domínio do figma
+  - Pegando os dados necessários no Figma
+  - Objeto antes da organização
+  ```
+  {
+    "name": "Tortora",
+    "accountNumber": "0000000-0",
+    "accountAgency": "0000",
+    "accountBalance": 1324.64,
+    "accountLimit": 1000.00,
+    "pixIcon": "",
+    "pixDescription": "PIX",
+    "payIcon": "",
+    "payDescription": "Pagar",
+    "transferIcon": "",
+    "transferDescription": "Transferir",
+    "cardNumber": "xxxx xxxx xxxx 0000",
+    "cardLimit": 1000,
+    "newIcon": "",
+    "newDescription": "O Tortora tem soluções de crédito sob medida para você"
+  }
+  ```
+  - Objeto depois da organização
+  ```
+  {
+    "name": "Tortora",
+    "account": {
+      "number": "0000000-0",
+      "agency": "0000",
+      "balance": 1324.64,
+      "limit": 1000.00
+    },
+    "features": [
+      {
+        "icon": "URL",
+        "description": "PIX"
+      },
+      {
+        "icon": "URL",
+        "description": "Pagar"
+      },
+      {
+        "icon": "URL",
+        "description": "Transferir"
+      }
+    ],
+    "card": {
+      "number": "xxxx xxxx xxxx 0000",
+      "limit": 1000 
+    },
+    "news": [
+      {
+        "icon": "URL",
+        "description": "O Tortora tem soluções de crédito sob medida para você"
+      }
+    ]
+  }
+  ```
 - Diagrama de classes com ChatGPT e Mermaid
+  - Comando para dar ao ChatGPT
+    - Gere um diagrama de classes (usando a sintaxe mermaid) tendo em vista o seguinte JSON
+      que representa um usuário de um banco. Mantenha uma estrutura simples e fiel ao modelo
+      que vou passar. Além disso, mantenha o nome das classes em inglês.
+    - Passar o JSON gerado
+  - Será gerado um diagrama de classes que pode ser visualizado no github
+  - Site da Mermaid
+    - mermaid.js.org
 - Mapeamento Objeto Relacional (ORM)
 - Hotfix 'precision' e 'scale'
 - Implementando a camada de negócio
