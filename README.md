@@ -1904,12 +1904,65 @@
 - Hotfix 'precision' e 'scale'
   - Precision precisa ser 13 e o scale 2
 - Implementando a camada de negócio
+  - Implementando camada de negócio
+  - Utiliza `interface` para não expor implementação
+  - Algumas exceptions e implementando a camada de serviço bem simples
 - Expondo endpoints REST e testando a API
+  - Criando a camada de controller
+  - Adicionando open API para realizar testes
+  - Endereço para acessar o Swagger
+    - http://localhost:8080/swagger-ui/index.html#
 - Tratamento de exceções em APIs REST
+  - Quebrando a API para adicionar validações
+  - Utilização do @RestControllerAdvice
+  - Tratamento dos erros
 - Provisionando o PostgreSQL (Railway) e criando o perfil de PRD
+  - Endereço do railway
+    - railway.app
+    - Criando arquivo para deploy em produção
+  - Na primeira execução precisa configurar o arquivo application-prd.yml com `ddl-auto: create`
+  - Depois da primeira execução pode deixar como validate para não criar as tabelas novamente
 - Deploy da API na nuvem (Railway)
+  - Configurar aplicação para rodar no railway
+  - Alterar o build.gradle
+  - Adicionar o código abaixo
+```
+tasks.jar {
+  manifest {
+      attributes["Main-Class"] = "ti.tortora.Application"
+  }
+}
+```
+  - Criar arquivo Procfile
+  - Executar task do gradle bootJar
+  - Pegar caminho do jar dentro do build do gradle
+  - Exemplo
+    - build/libs/spring-api-railway-0.0.1-SNAPSHOT.jar
+  - Se não rodar o projeto
+  - Atualizar versão do gradle dentro do gradle-wrapper.properties para 7.6.1
+  - Mostra algumas configurções do `railway`
+  - Endereço do aplicativo
+    - tortora-railway.up.railway.app
+  - Precisa configurar variaveis de ambiente para produção
+  - Project Settings
+  - Environments: production
+  - Shared Variables: production
+    - SPRING_PROFILES_ACTIVE = prd
+  - Precisa configurar dentro do aplicativo spring no railway as variaveis de ambiente
+  - Essa variaveis estão dentro do Intellij
+  - Também precisa configurar a porta da aplicação além das configurações do Intellij
+  - PORT = 8080
+  - Endereço do Swagger em produção
+    - https://tortora-railway.up.railway.app/swagger-ui/index.html
 - Correção de CORS e conclusão
+  - Faltando somente uma anotação no Application
+  - Testando a aplicação em produção
 - Desafio! Crie a sua própria API
+  - Criar a sua própria API utilizando o que foi ensinado
+  - Criar a API de salário e economias por tempo
 - Entendendo o desafio
+  - 
 
 ### Avalie este Bootcamp
+- Falar o que achou do bootcamp
+- Analisar todas as anotações
