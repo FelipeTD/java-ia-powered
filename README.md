@@ -1892,7 +1892,17 @@
   - Site da Mermaid
     - mermaid.js.org
 - Mapeamento Objeto Relacional (ORM)
+  - Explicando as anotações do JPA
+  - Criando as classes e adicionando anotações
+  - Configurações do arquivo `application.yml`
+  - Acessando o banco de dados `H2` pelo console
+  - O endereço para acessar é:
+    - `localhost:8080/h2-console`
+  - Dados para acessar o banco
+    - JDBC URL: jdbc:h2:mem:ftd2024
+    - Username: ftd2024
 - Hotfix 'precision' e 'scale'
+  - Precision precisa ser 13 e o scale 2
 - Implementando a camada de negócio
 - Expondo endpoints REST e testando a API
 - Tratamento de exceções em APIs REST
