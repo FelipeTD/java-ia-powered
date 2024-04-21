@@ -1961,8 +1961,97 @@ tasks.jar {
   - Criar a sua própria API utilizando o que foi ensinado
   - Criar a API de salário e economias por tempo
 - Entendendo o desafio
-  - 
+  - Entregar o link do desafio no github
 
 ### Avalie este Bootcamp
-- Falar o que achou do bootcamp
-- Analisar todas as anotações
+- Foi 63 horas de conhecimento sobre desenvolvimento com Java
+
+#### Primeiro módulo
+- No primeiro módulo foi focado em desenvolvimento antes e depois do Spring
+  - Conceito básico de Spring mostrando a diferença entre como era feito com Java EE e como é feito com Spring
+  - Documentação da API com Swagger
+  - Níveis de maturidade de uma aplicação
+  - Uma parte muito legal sobre Spring Security utilizando Java 8
+  - Padrões de projeto (Design Patterns)
+- Projetos:
+  - Primeiros passos: https://github.com/FelipeTD/primeiros-passos
+  - Spring Data JPA: https://github.com/FelipeTD/spring-data-jpa
+  - Spring Boot Web: https://github.com/FelipeTD/springboot-web
+  - Spring Security: https://github.com/FelipeTD/spring-security
+  - Spring Security com JWT: https://github.com/FelipeTD/spring-security-jwt
+  - Java Puro para padrões de projeto: https://github.com/FelipeTD/java-puro
+  - Padrões de projeto com Spring Boot: https://github.com/FelipeTD/padroes-projetos-spring-boot
+- Avaliação do módulo:
+  - Esse módulo foi excelente para reforçar conhecimentos e entender como algumas coisas funcionam e funcionavam
+  - Mas foi um módulo básico com conhecimentos básicos para entender como as coisas funcionam
+  - Seria legal ter uma implementação do Spring Security utilizando a versão mais atual
+  - Eu encontrei um vídeo no YouTube com a versão mais atual do Spring Security:
+    - https://www.youtube.com/watch?v=EjrlN_OQVDQ
+  - Lembrando ser bom saber desenvolver nas duas versões, pois tem empresas que utilizam Java 8 e outras que utilizam Java 17
+
+#### Segundo módulo
+- No segundo módulo foi focado em testes, conceitos de API e Arquiteturas:
+  - Conceitos básico sobre testes
+  - Testes unitários com JUnit
+  - Utilização do Mockito em Testes unitários
+  - Conceitos sobre Arquitetura REST
+  - Conceitos sobre Hexagonal
+  - Deploy na Heroku
+  - Conceito sobre microserviços, BFF e `DDD`
+  - Programação orientada a eventos com Java, Spring Boot e Kafka
+  - Projeto com Quarkus Framework
+- Projetos:
+  - Junit com Gradle: https://github.com/FelipeTD/exemplo-junit-gradle
+  - Mockito: https://github.com/FelipeTD/mockito-project
+  - API feita com Spring, Kotlin e Hexagonal: https://github.com/FelipeTD/avengers-api
+    - Essa API foi feita deploy na Heroku
+  - Produtor Kafka: https://github.com/FelipeTD/spring-kafka
+  - Consumidor Kafka: https://github.com/FelipeTD/spring-kafka-consumidor
+  - Quarkus: https://github.com/FelipeTD/quarkus
+- Avaliação do módulo:
+  - Foi um excelente módulo para entender melhor a parte de testes e Arquiteturas
+  - O projeto utilizando Quarkus foi o melhor projeto do curso com muitas informações sobre vários serviços, dentre eles:
+    - OpenTelemetry
+    - GrayLog e OpenSean
+    - Traefik
+    - Redis
+    - Docker
+    - MariaDB
+    - MongoDB
+    - Java 17
+    - Quarkus Framework
+    - JUnit
+    - TestContainers
+    - Hibernate
+    - Flyway
+  - É muito conhecimento sobre programação. 
+  - Fiquei impressionado com o tanto que tecnologias que podem ser utilizadas no desenvolvimento de um `software`
+  - Esse foi o módulo mais complexo do Bootcamp
+  - Ensinando conceitos que eu já utilizei nas empresas, mas com uma explicação excelente
+  - Parabéns, Thiago Poiani as suas explicações são ótimas
+
+#### Terceiro módulo
+- No último módulo foi focado em descrever vantagens da AWS e Deploy com railway:
+  - Vantagens de se utilizar AWS
+  - Conceito de cloud
+  - Infraestrutura Global da AWS
+  - Computação em AWS
+  - Redes em AWS
+  - Armazenamento e banco de dados na AWS
+  - Publicando uma API REST com Railway
+- Projetos:
+  - Vantagens de alguns serviços da AWS: https://github.com/FelipeTD/vantagens-aws
+  - Aplicação com deploy no railway: https://github.com/FelipeTD/spring-api-railway
+- Avaliação do módulo:
+  - Foi um dos módulos com menos conteúdo prático do Bootcamp
+  - Fiquei chateado de não ter nenhuma implementação de serviços na AWS 
+  - Foi feita somente a explicação dos serviços
+  - Seria legal ver um deploy na AWS utilizando um Fargate 
+  - Criar uma função simples numa (Lambda) pegando dados de um bucket no `S3`
+  - A parte de deploy utilizando Railway é uma excelente alternativa ao Heroku
+  - Vou utilizar nos meus projetos pessoais
+
+#### Conclusão
+- Foram 15 repositorios criados no GitHub com vários temas sobre programação
+- Recomendo esse curso para quem já entende sobre programação, mas quer entender como funciona o que utilizamos
+- A conclusão que eu chego ao terminar esse bootcamp é que tem sempre mais conteúdo para ser estudado
